@@ -19,19 +19,6 @@ session_start();
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 </head>
-
-<!--
-    You can change the color scheme of the page. Just change the class of the <body> tag. 
-    You can use this class: "primary-color-white", "primary-color-red", "primary-color-orange", "primary-color-blue", "primary-color-aqua", "primary-color-dark" 
-    -->
-
-<!--
-    Each element is able to have its own background or text color. Just change the class of the element.  
-    You can use this class: 
-    "background-white", "background-red", "background-orange", "background-blue", "background-aqua", "background-primary" 
-    "text-white", "text-red", "text-orange", "text-blue", "text-aqua", "text-primary"
-    -->
-
 <body class="size-1520 primary-color-red background-dark">
   <?php
   include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/navbar.php');
@@ -189,25 +176,23 @@ session_start();
       </div>
     </section>
 
-    <!-- SECTION 3 -->
-    <section class="grid">
-      <div class="m-12 l-6 padding-2x background-aqua">
-        <p class="text-strong text-size-80 text-white">03</p>
-
-        <h2 class="text-size-50 text-line-height-1 text-white"><b>Morbi hymenaeos rhoncus ridiculus</b></h2>
-
-        <h3>Nonummy nibh euismod tincidunt ut laoreet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-          dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy.</p>
-        <p>Libero malesuada varius leo mollis laoreet error occaecat unde nostra harum. A morbi hymenaeos rhoncus
-          ridiculus temporibus consectetur ducimus exercitation. Integer arcu adipiscing augue iusto nam duis facilisi
-          senectus iaculis proin repudiandae nemo cupidatat. Ipsum donec enim leo ultricies pulvinar aute semper dolores
-          habitant impedit harum. </p>
+    <section class="grid margin text-center" style="margin-top:2rem;">
+      <div class="m-12 l-4 padding-2x background-dark margin-bottom text-right">
+        <h3 class="text-strong text-size-25 text-uppercase margin-bottom-10">Let's keep in touch</h3>
+        <p>Deleniti pertinacia eu est, te his soluta quaestio pericula illum vulputate lobortis facilisis.</p>
       </div>
-
-      <!-- Image-->
-      <img class="m-12 l-6" src="img/img-05.jpg">
+      <a href="/" class="s-12 m-6 l-2 padding vertical-center margin-bottom facebook hover-zoom">
+        <i class="icon-sli-social-facebook text-size-60 text-white center"></i>
+      </a>
+      <a href="/" class="s-12 m-6 l-2 padding vertical-center margin-bottom twitter hover-zoom">
+        <i class="icon-sli-social-twitter text-size-60 text-white center"></i>
+      </a>
+      <a href="/" class="s-12 m-6 l-2 padding vertical-center margin-bottom youtube hover-zoom">
+        <i class="icon-sli-social-youtube text-size-60 text-white center"></i>
+      </a>
+      <a href="/" class="s-12 m-6 l-2 padding vertical-center margin-bottom linkedin hover-zoom">
+        <i class="icon-sli-social-linkedin text-size-60 text-white center"></i>
+      </a>
     </section>
 
   </main>
