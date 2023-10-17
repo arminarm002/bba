@@ -18,7 +18,7 @@
               <li><a href="/bba/auth/profile.php"><?php echo $_SESSION['fullname']; ?></a></li>
           <?php }
         } else { ?>
-          <li><a href="/bba/auth/login.php">Log in</a></li>
+          <li><a href="/bba/auth/login.php">Log in2</a></li>
         <?php }
         if (isset($_SESSION['level'])) { ?>
           <li><a href="/bba/auth/logout.php">Log out</a></li>
