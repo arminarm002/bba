@@ -21,7 +21,7 @@ session_start();
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 </head>
 
-<body class="size-1520 primary-color-red background-dark">
+<body class="size-1520 primary-color-red background-dark"> 
   <?php
   include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/navbar.php');
   ?>
