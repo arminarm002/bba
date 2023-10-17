@@ -57,9 +57,6 @@ if (isset($_POST['login'])) {
         $_SESSION['password'] = $row['password'];
         $_SESSION['level'] = $row['level'];
 
-        echo '<script language="javascript">';
-        echo 'alert("Welcome")';
-        echo '</script>';
         header("refresh: 1; url=profile.php");
       } else {      
         echo '<script language="javascript">';

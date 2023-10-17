@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <header class="grid">
   <!-- Top Navigation -->
   <nav class="s-12 grid background-none background-primary-hightlight">
