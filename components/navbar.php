@@ -13,16 +13,20 @@
 
         <?php if (isset($_SESSION['level'])) {
           if ($_SESSION['level'] == "2") { ?>
-            <li><a href="backend.php">เจ้าของ</a></li>
+            <li><a href="/bba/auth/profile.php">เจ้าของ</a></li>
           <?php } else if ($_SESSION['level'] == "1") { ?>
-              <li><a href="/bba/auth/profile.php"><?php echo $_SESSION['fullname']; ?></a></li>
-          <?php }
+              <li><a href="/bba/auth/profile.php">
+                <?php echo $_SESSION['fullname']; ?>
+                </a></li>
+
+          <?php } ?>
+          <li><a href="/bba/auth/showscan.php">แสดงผล</a></li>
+          <li><a href="/bba/auth/logout.php">Log out</a></li>
+          <?php
         } else { ?>
           <li><a href="/bba/auth/login.php">Log in</a></li>
-        <?php }
-        if (isset($_SESSION['level'])) { ?>
-          <li><a href="/bba/auth/logout.php">Log out</a></li>
         <?php } ?>
+
       </ul>
     </div>
   </nav>

@@ -1,0 +1,32 @@
+h1,
+table {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th,
+td {
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+tr {
+  background: hsl(50, 50%, 80%);
+}
+
+tr,
+td {
+  transition: .4s ease-in;
+}
+
+tr:first-child {
+  background: hsla(12, 100%, 40%, 0.5);
+}
+
+tr:nth-child(even) {
+  background: hsla(50, 50%, 80%, 0.7);
+}

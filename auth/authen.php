@@ -6,6 +6,7 @@ if (isset($_POST['add'])) {
   $pass = $_POST['pass'];
   $name = $_POST['name'];
   $phone = $_POST['phone'];
+  $gender = $_POST['gender'];
 
   $sql = $conn->query("SELECT * FROM tb_user WHERE username='" . $username . "' ");
 
@@ -19,8 +20,8 @@ if (isset($_POST['add'])) {
   } else {
     $password = password_hash($pass, PASSWORD_DEFAULT);
     $sql = ("INSERT Into tb_user (
-        username, password, fullname, phone, level) values (
-          '$username','$password', '$name', '$phone', '1')");
+        username, password, fullname, phone, gender, level) values (
+          '$username','$password', '$name', '$phone', '$gender', '1')");
     $query = $conn->query($sql);
     if ($query) {
       echo '<script language="javascript">';
@@ -55,6 +56,7 @@ if (isset($_POST['login'])) {
         $_SESSION['fullname'] = $row['fullname'];
         $_SESSION['phone'] = $row['phone'];
         $_SESSION['password'] = $row['password'];
+        $_SESSION['gender'] = $row['gender'];
         $_SESSION['level'] = $row['level'];
 
         header("refresh: 1; url=profile.php");

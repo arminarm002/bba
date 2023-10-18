@@ -8,13 +8,13 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free responsive business website template</title>
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/responsee.css">
-  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="/bba/css/components.css">
+  <link rel="stylesheet" href="/bba/css/icons.css">
+  <link rel="stylesheet" href="/bba/css/responsee.css">
+  <link rel="stylesheet" href="/bba/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="/bba/owl-carousel/owl.theme.css">
   <!-- CUSTOM STYLE -->
-  <link rel="stylesheet" href="css/template-style.css">
+  <link rel="stylesheet" href="/bba/css/template-style.css">
   <link rel="stylesheet" href="/bba/theme/css/self.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>

@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Log in/Sign in</title>
-  <link rel="stylesheet" href="../css/components.css">
-  <link rel="stylesheet" href="../css/icons.css">
-  <link rel="stylesheet" href="../css/responsee.css">
-  <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="/bba/css/components.css">
+  <link rel="stylesheet" href="/bba/css/icons.css">
+  <link rel="stylesheet" href="/bba/css/responsee.css">
+  <link rel="stylesheet" href="/bba/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="/bba/owl-carousel/owl.theme.css">
   <!-- CUSTOM STYLE -->
-  <link rel="stylesheet" href="../css/template-style.css">
+  <link rel="stylesheet" href="/bba/css/template-style.css">
   <link rel="stylesheet" href="/bba/theme/css/self.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">
-  <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/bba/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="/bba/js/jquery-ui.min.js"></script>
 </head>
 
 <body class="size-1520 primary-color-red background-dark">
@@ -46,7 +46,7 @@
               Username <span style="color: #c81010!important;">|</span> Email
             </h2>
             <div class="webflow-style-input">
-              <input type="text" name="username" placeholder="ใส่ชื่อหรืออีเมลล์สำหรับลงชื่อเข้าระบบ" required></input>
+              <input type="text" name="username" placeholder="ชื่อผู้ใช้ หรือ อีเมลล์" required></input>
             </div>
             <!-- Password -->
             <h2 class="text-size-20 text-strong text-uppercase text-dark" style="margin-bottom: 0px; margin-top: 25px;">
