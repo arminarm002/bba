@@ -7,24 +7,24 @@
     </a>
     <div class="top-nav s-12 l-9">
       <ul class="top-ul right chevron">
-        <li><a href="/bba/index.php">Home</a></li>
-        <li><a href="/bba/about-us.php">About Us</a></li>
+        <li><a href="/bba/index.php">หน้าหลัก</a></li>
+        <li><a href="/bba/about-us.php">เกี่ยวกับเรา</a></li>
         <li><a href="/bba/gallery.php">Gallery</a></li>
 
         <?php if (isset($_SESSION['level'])) {
           if ($_SESSION['level'] == "2") { ?>
-            <li><a href="/bba/auth/profile.php">เจ้าของ</a></li>
+            <li><a href="/bba/auth/record.php">เจ้าของ</a></li>
           <?php } else if ($_SESSION['level'] == "1") { ?>
-              <li><a href="/bba/auth/profile.php">
-                <?php echo $_SESSION['fullname']; ?>
+              <li><a href="/bba/auth/record.php">
+                บันทึกข้อมูล
                 </a></li>
 
           <?php } ?>
           <li><a href="/bba/auth/showscan.php">แสดงผล</a></li>
-          <li><a href="/bba/auth/logout.php">Log out</a></li>
+          <li><a href="/bba/auth/logout.php">ออกจากระบบ</a></li>
           <?php
         } else { ?>
-          <li><a href="/bba/auth/login.php">Log in</a></li>
+          <li><a href="/bba/auth/login.php">เข้าสู่ระบบ</a></li>
         <?php } ?>
 
       </ul>

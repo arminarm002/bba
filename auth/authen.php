@@ -59,7 +59,7 @@ if (isset($_POST['login'])) {
         $_SESSION['gender'] = $row['gender'];
         $_SESSION['level'] = $row['level'];
 
-        header("refresh: 1; url=profile.php");
+        header("refresh: 1; url=showscan.php");
       } else {      
         echo '<script language="javascript">';
         echo 'alert("Password Invalid")';

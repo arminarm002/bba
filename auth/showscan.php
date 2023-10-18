@@ -46,7 +46,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
 
           <table style="width:100%;color:#333333;">
             <tr>
-              <th>วันที่</th>
+              <th valign="top">วันที่</th>
               <?php foreach ($sql as $row) {
                 ?>
                 <th>
@@ -55,11 +55,12 @@ include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
               <?php } ?>
             </tr>
             <tr>
-              <td>น้ำหนัก</td>
+              <td valign="top">น้ำหนัก</td>
               <?php foreach ($sql as $row) {
                 ?>
                 <td>
-                  <?php echo $row['user_weight']; ?>
+                  <?php echo $row['user_weight'];
+                  $weight = $row['user_weight']; ?>
                 </td>
               <?php } ?>
             </tr>
@@ -78,7 +79,8 @@ include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
               <?php foreach ($sql as $row) {
                 ?>
                 <td>
-                  <?php echo $row['user_visceralfat']; ?>
+                  <?php echo $row['user_visceralfat']; 
+                  $vfat = $row['user_visceralfat'];?>
                 </td>
               <?php } ?>
             </tr>
@@ -87,7 +89,8 @@ include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
               <?php foreach ($sql as $row) {
                 ?>
                 <td>
-                  <?php echo $row['user_muscle']; ?>
+                  <?php echo $row['user_muscle'];
+                  $muscle = $row['user_muscle'];?>
                 </td>
               <?php } ?>
             </tr>
@@ -96,7 +99,8 @@ include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
               <?php foreach ($sql as $row) {
                 ?>
                 <td>
-                  <?php echo $row['user_bodyage']; ?>
+                  <?php echo $row['user_bodyage'];
+                  $bodyage = $row['user_bodyage'];?>
                 </td>
               <?php } ?>
             </tr>
@@ -105,7 +109,8 @@ include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
               <?php foreach ($sql as $row) {
                 ?>
                 <td>
-                  <?php echo $row['user_metabolism']; ?>
+                  <?php echo $row['user_metabolism'];
+                  $metabolism = $row['user_metabolism'];?>
                 </td>
               <?php } ?>
             </tr>
@@ -114,32 +119,107 @@ include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
               <?php foreach ($sql as $row) {
                 ?>
                 <td>
-                  <?php echo $row['user_bmi']; ?>
+                  <?php echo $row['user_bmi'];
+                  $bmi = $row['user_bmi'];?>
                 </td>
               <?php } ?>
             </tr>
 
           <?php } ?>
         </table>
-
-        <!-- <img src="/bba/img/scan.jpg"> -->
       </div>
     </section>
 
     <section class="grid margin-bottom-20">
       <h1> ประมวลค่าร่างกาย (ล่าสุด) </h1>
+      <!-- น้ำหนัก -->
+      <p><?php echo "น้ำหนัก "; ?><u><?php echo $weight; ?></u><?php echo " กิโลกรัม"; ?></p>
+      <!-- คำนวณไขมันในร่างกาย -->
       <p>
-        <?php echo "ไขมันในร่างกาย = " . $fat . "อยู่ในเกณฑ์"; 
+        <?php echo "ไขมันในร่างกาย = " . $fat . "อยู่ในเกณฑ์ "; 
+        ?><u><?php 
         if($_SESSION['gender']=="male"){
-          if($fat<9){
+          if($fat<=9){
             echo "ต่ำ";
-          } else if ($fat<19.9){
+          } else if ($fat<=19.9){
             echo "ปกติ";
+          } else if ($fat<=24.9){
+            echo "เริ่มอ้วน";
+          } else if ($fat>=25){
+            echo "อ้วน";
           }
-        }?>
+        } else if ($_SESSION['gender']=="female"){
+          if($fat<=19.9){
+            echo "ต่ำ";
+          } else if ($fat<=29.9){
+            echo "ปกติ";
+          } else if ($fat<=34.9){
+            echo "เริ่มอ้วน";
+          } else if ($fat>=35){
+            echo "อ้วน";
+          }
+        }?></u>
       </p>
-      <p></p>
-      <p></p>
+      <!-- คำนวณไขมันในช่องท้อง -->
+      <p>
+        <?php echo "ไขมันในช่องท้อง = " . $vfat . "อยู่ในเกณฑ์ "; 
+        ?><u><?php 
+          if($vfat<=2){
+            echo "สมบูรณ์มาก";
+          } else if ($vfat<=5){
+            echo "ปกติ";
+          } else if ($vfat<=10){
+            echo "เล็กน้อย";
+          } else if ($vfat<=15){
+            echo "อันตราย";
+          } else if ($vfat>15){
+            echo "อันตรายมาก";
+          }?></u>
+      </p>
+      <!-- คำนวณกล้ามเนื้อ -->
+        <?php echo "ร่างกายมีกล้ามเนื้อ = " . $muscle . "อยู่ในเกณฑ์ "; 
+        ?><u><?php 
+          if($_SESSION['gender']=="male"){
+            if($muscle<=32.8){
+            echo "ต่ำ";
+          } else if ($muscle<=35.7){
+            echo "ปกติ";
+          } else if ($muscle<=37.3){
+            echo "สูง";
+          } else if ($muscle>=37.4){
+            echo "สูงมาก";
+          }
+        } if($_SESSION['gender']=="female"){
+          if($muscle<=25.8){
+          echo "ต่ำ";
+        } else if ($muscle<=27.9){
+          echo "ปกติ";
+        } else if ($muscle<=29){
+          echo "สูง";
+        } else if ($muscle>=29.1){
+          echo "สูงมาก";
+        }
+      }?></u>
+      <!-- อายุเซลล์ร่างกาย -->
+      <p><?php echo "อายุเซลล์ในร่างกาย "; ?><u><?php echo $bodyage; ?></u><?php echo " ปี" ?></p>
+      <!-- อัตราการเผาผลาญ -->
+      <p><?php echo "อัตราการเผาผลาญ ";?><u><?php echo $metabolism; ?></u><?php echo " kcal" ?></p>
+      <!-- คำนวณค่า BMI -->
+      <p>
+        <?php echo "BMI = " . $bmi . "อยู่ในเกณฑ์ ";
+        ?><u><?php 
+          if($bmi<=18.5){
+            echo "ผอม";
+          } else if ($bmi<=22.9){
+            echo "สมส่วน (ปกติ)";
+          } else if ($bmi<=24.9){
+            echo "ท้วม";
+          } else if ($bmi<=30){
+            echo "อ้วน";
+          } else if ($bmi>30){
+            echo "อ้วนมาก (อันตราย)";
+          }?></u>
+      </p>
     </section>
 
   </main>
