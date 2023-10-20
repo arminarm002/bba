@@ -66,11 +66,19 @@ tr:nth-child(even) {
   flex: 0 0 auto;
   width: 12.5%;
 }
-.col-5 {
+.col-2 {
   flex: 0 0 auto;
   width: 20%;
 }
 .fat-col-2 {
   flex: 0 0 auto;
   width: 2%;
+}
+.vfat-col-3 {
+  flex: 0 0 auto;
+  width: 3.33%;
+}
+.mus-col-3 {
+  flex: 0 0 auto;
+  width: 1.666%;
 }
