@@ -17,7 +17,7 @@ if (isset($_SESSION['level'])) {
   $pvfat = ($vfat * 100) / 30;
   $pmuscle = ($muscle * 100) / 60;
   $pbodyage = ($bodyage * 100) / 80;
-  $pmetabolism = ($metabolism * 100) / 3000;
+  $pmetabolism = ($metabolism * 100) / 2500;
   $pbmi = ($bmi * 100) / 50;
   ?>
   <!DOCTYPE html>
@@ -583,7 +583,7 @@ if (isset($_SESSION['level'])) {
           </div>
         </div>
         <br>
-        
+
         <!-- อัตราการเผาผลาญ -->
         <p>
           <?php echo "อัตราการเผาผลาญ "; ?><u>
@@ -591,6 +591,13 @@ if (isset($_SESSION['level'])) {
           </u>
           <?php echo " kcal" ?>
         </p>
+        <div class="row">
+          <div class="col-2">500 kcal</div>
+          <div class="col-2">1000 kcal</div>
+          <div class="col-2">1500 kcal</div>
+          <div class="col-2">2000 kcal</div>
+          <div class="col-2">2500</div>
+        </div>
         <div class="progress">
           <div class="progress-bar metabolism">
             <span class="progress-bar-text">
