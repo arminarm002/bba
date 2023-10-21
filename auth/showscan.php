@@ -341,6 +341,7 @@ if (isset($_SESSION['level'])) {
           </div>
         </div>
         <br>
+
         <!-- คำนวณไขมันในช่องท้อง -->
         <p>
           <?php echo "ไขมันในช่องท้อง = " . $vfat . "อยู่ในเกณฑ์ ";
@@ -399,6 +400,7 @@ if (isset($_SESSION['level'])) {
           </div>
         </div>
         <br>
+
         <!-- คำนวณกล้ามเนื้อ -->
         <p>
           <?php echo "ร่างกายมีกล้ามเนื้อ = " . $muscle . "อยู่ในเกณฑ์ ";
@@ -562,6 +564,7 @@ if (isset($_SESSION['level'])) {
           </div>
         </div>
         <br>
+        
         <!-- อายุเซลล์ร่างกาย -->
         <p>
           <?php echo "อายุเซลล์ในร่างกาย "; ?><u>
@@ -596,7 +599,7 @@ if (isset($_SESSION['level'])) {
           <div class="col-2">1000 kcal</div>
           <div class="col-2">1500 kcal</div>
           <div class="col-2">2000 kcal</div>
-          <div class="col-2">2500</div>
+          <div class="col-2">2500 kcal</div>
         </div>
         <div class="progress">
           <div class="progress-bar metabolism">
