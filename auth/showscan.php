@@ -88,7 +88,13 @@ if (isset($_SESSION['level'])) {
       <section class="grid margin-bottom-20">
         <div class="m-12 l-7">
           <?php
-          $sql = $conn->query("SELECT * FROM tb_scan WHERE user_id='" . $_SESSION['id'] . "'");
+          $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
+          $limit = isset($_GET['limit']) ? intval($_GET['limit']) : 5;
+          $offset = ($page - 1) * $limit;
+          $countSql = $conn->query("SELECT COUNT(*) AS total_records FROM tb_scan WHERE user_id='" . $_SESSION['id'] . "'");
+          $totalRecords = $countSql->fetch_assoc()['total_records'];
+          $totalPages = ceil($totalRecords / $limit);
+          $sql = $conn->query("SELECT * FROM tb_scan WHERE user_id='" . $_SESSION['id'] . "'  LIMIT $offset, $limit");
           if ($sql->num_rows > 0) { ?>
 
             <table style="width:100%;color:#333333;">
@@ -174,6 +180,21 @@ if (isset($_SESSION['level'])) {
 
             <?php } ?>
           </table>
+
+          <div class="pagination" style="text-align: center; margin: 1rem;">
+              <!-- Previous page link -->
+              <?php if($page > 1): ?>
+                <a href="?page=<?= $page -1 ?>">Previous</a>
+              <?php endif ?>
+              <!-- Page links -->
+              <?php for($i = 1; $i <= $totalPages; $i++): ?>
+                <a href="?page=<?= $i ?>" class="<?= $page == $i ? 'active': '' ?>"><?= $i ?></a>
+              <?php endfor ?>
+              <!-- Next page link -->
+              <?php if($page < $totalPages): ?>
+                <a href="?page=<?= $page + 1 ?>">Next</a>
+              <?php endif ?>
+          </div>
         </div>
       </section>
 
