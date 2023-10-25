@@ -27,6 +27,11 @@ tr:nth-child(even) {
   background: hsla(50, 50%, 80%, 0.7);
 }
 
+.th-in {
+  margin-left: 25px;
+  
+}
+
 .progress {
   width: 100%;
   height: 20px;
@@ -79,6 +84,11 @@ tr:nth-child(even) {
   width: 25%;
 }
 
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33%;
+}
+
 .fat-col-2 {
   flex: 0 0 auto;
   width: 2%;
@@ -102,4 +112,5 @@ tr:nth-child(even) {
 
 .p {
   margin-bottom: 50px;
+  font-size: 1.2rem;
 }

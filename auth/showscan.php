@@ -108,73 +108,73 @@ if (isset($_SESSION['level'])) {
                 <?php } ?>
               </tr>
               <tr>
-                <td valign="top">น้ำหนัก</td>
+                <th class="th-in" valign="top">น้ำหนัก</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <td>
+                  <th>
                     <?php echo $row['user_weight'];
                     $weight = $row['user_weight']; ?>
-                  </td>
+                  </th>
                 <?php } ?>
               </tr>
               <tr>
-                <td>ไขมันในร่างกาย (%)</td>
+                <th class="th-in">ไขมันในร่างกาย (%)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <td>
+                  <th>
                     <?php echo $row['user_fat'];
                     $fat = $row['user_fat']; ?>
-                  </td>
+                  </th>
                 <?php } ?>
               </tr>
               <tr>
-                <td>ไขมันในช่องท้อง (หน่วย)</td>
+                <th>ไขมันในช่องท้อง (หน่วย)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <td>
+                  <th>
                     <?php echo $row['user_visceralfat'];
                     $vfat = $row['user_visceralfat']; ?>
-                  </td>
+                  </th>
                 <?php } ?>
               </tr>
               <tr>
-                <td>กล้ามเนื้อ (%)</td>
+                <th>กล้ามเนื้อ (%)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <td>
+                  <th>
                     <?php echo $row['user_muscle'];
                     $muscle = $row['user_muscle']; ?>
-                  </td>
+                  </th>
                 <?php } ?>
               </tr>
               <tr>
-                <td>อายุเซลล์ในร่างกาย (ปี)</td>
+                <th>อายุเซลล์ในร่างกาย (ปี)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <td>
+                  <th>
                     <?php echo $row['user_bodyage'];
                     $bodyage = $row['user_bodyage']; ?>
-                  </td>
+                  </th>
                 <?php } ?>
               </tr>
               <tr>
-                <td>อัตราการเผาผลาญ (kcal)</td>
+                <th>อัตราการเผาผลาญ (kcal)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <td>
+                  <th>
                     <?php echo $row['user_metabolism'];
                     $metabolism = $row['user_metabolism']; ?>
-                  </td>
+                  </th>
                 <?php } ?>
               </tr>
               <tr>
-                <td>ดัชนีมวลร่างกายโดยรวม (BMI)</td>
+                <th>ดัชนีมวลร่างกายโดยรวม (BMI)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <td>
+                  <th>
                     <?php echo $row['user_bmi'];
                     $bmi = $row['user_bmi']; ?>
-                  </td>
+                  </th>
                 <?php } ?>
               </tr>
 
@@ -205,10 +205,11 @@ if (isset($_SESSION['level'])) {
         <p class="p">
           น้ำหนัก <u><?php echo $weight; ?></u> กิโลกรัม <br>
           <div class="row" style="margin-bottom:0px;">
-            <div class="col-3">37.5</div>
-            <div class="col-3">75</div>
-            <div class="col-3">112.5</div>
-            <div class="col-3">150</div>
+            <div class="col-2">30</div>
+            <div class="col-2">60</div>
+            <div class="col-2">90</div>
+            <div class="col-2">120</div>
+            <div class="col-2">150</div>
           </div>
         </p>
         <div class="progress">
@@ -222,7 +223,7 @@ if (isset($_SESSION['level'])) {
 
         <!-- คำนวณไขมันในร่างกาย -->
         <p class="p">
-          <?php echo "ไขมันในร่างกาย = " . $fat . "อยู่ในเกณฑ์ ";
+          <?php echo "% ไขมันในร่างกาย = " . $fat . " : อยู่ในเกณฑ์ ";
           ?><u>
             <?php
             if ($_SESSION['gender'] == "male") {
@@ -365,7 +366,7 @@ if (isset($_SESSION['level'])) {
 
         <!-- คำนวณไขมันในช่องท้อง -->
         <p class="p">
-          <?php echo "ไขมันในช่องท้อง = " . $vfat . "อยู่ในเกณฑ์ ";
+          <?php echo "ไขมันในช่องท้อง = " . $vfat . " : อยู่ในเกณฑ์ ";
           ?><u>
             <?php
             if ($vfat <= 2) {
@@ -424,7 +425,7 @@ if (isset($_SESSION['level'])) {
 
         <!-- คำนวณกล้ามเนื้อ -->
         <p class="p">
-          <?php echo "ร่างกายมีกล้ามเนื้อ = " . $muscle . "อยู่ในเกณฑ์ ";
+          <?php echo "% กล้ามเนื้อในร่างกาย = " . $muscle . " : อยู่ในเกณฑ์ ";
           ?><u>
             <?php
             if ($_SESSION['gender'] == "male") {
@@ -569,12 +570,12 @@ if (isset($_SESSION['level'])) {
         
         <!-- อายุเซลล์ร่างกาย -->
         <p class="p">
-          <?php echo "อายุเซลล์ในร่างกาย "; ?><u>
+          <?php echo "อายุเซลล์ร่างกาย = "; ?><u>
             <?php echo $bodyage; ?>
           </u>
           <?php echo " ปี" ?>
         </p>
-        <div class="row">
+        <div class="row" style="margin-bottom: 0px;">
             <div class="col-3">20 ปี</div>
             <div class="col-3">40 ปี</div>
             <div class="col-3">60 ปี</div>
@@ -592,7 +593,7 @@ if (isset($_SESSION['level'])) {
         <!-- อัตราการเผาผลาญ -->
         <div>
         <p class="p">
-          <?php echo "อัตราการเผาผลาญ "; ?><u>
+          <?php echo "อัตราการเผาผลาญ = "; ?><u>
             <?php echo $metabolism; ?>
           </u>
           <?php echo " kcal" ?>
@@ -616,7 +617,7 @@ if (isset($_SESSION['level'])) {
 
         <!-- คำนวณค่า BMI -->
         <p class="p">
-          <?php echo "BMI = " . $bmi . "อยู่ในเกณฑ์ ";
+          <?php echo "BMI = " . $bmi . " : อยู่ในเกณฑ์ ";
           ?><u>
             <?php
             if ($bmi <= 18.5) {
