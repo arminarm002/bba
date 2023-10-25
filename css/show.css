@@ -54,31 +54,52 @@ tr:nth-child(even) {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-.5 * var(--bs-gutter-x));
   margin-left: calc(-.5 * var(--bs-gutter-x));
-  padding-right: 20px;
+  padding-right: 2px;
   text-align: right;
+}
+
+@media (min-width: 550px) {
+  .row {
+    margin-bottom: 20px;
+  }
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 12.5%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 20%;
 }
 
 .col-3 {
   flex: 0 0 auto;
   width: 25%;
 }
-.col-1 {
-  flex: 0 0 auto;
-  width: 12.5%;
-}
-.col-2 {
-  flex: 0 0 auto;
-  width: 20%;
-}
+
 .fat-col-2 {
   flex: 0 0 auto;
   width: 2%;
 }
+
 .vfat-col-3 {
   flex: 0 0 auto;
   width: 3.33%;
 }
+
 .mus-col-3 {
   flex: 0 0 auto;
-  width: 1.666%;
+  width: 2.5%;
+}
+
+.ratate {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.p {
+  margin-bottom: 50px;
 }
