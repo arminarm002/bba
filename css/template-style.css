@@ -1279,8 +1279,7 @@ form.customform input:hover, form.customform textarea:hover, form.customform sel
 }
 
 body, p, li, a { 
-  font-weight: 400;
-  font-family: "Barlow"; 
+  font-weight: 400; 
   font-size: 0.95rem;  
 } 
 .background-white, .background-white p, a.background-white, .background-white a, .background-white a:link, .background-white a:visited, .background-white a:hover, .background-white a:active {
@@ -1288,12 +1287,10 @@ body, p, li, a {
 }
 h1, .h1 {
   font-weight: 100;
-  font-family: "Barlow";
   font-size: 50px;
 }
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
-  font-family: "Barlow";
 }
 .text-extra-thin {font-weight: 100;}
 .text-thin {font-weight: 300;}

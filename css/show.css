@@ -15,7 +15,7 @@ td {
 }
 
 tr {
-  background: hsl(50, 50%, 80%);
+  background: #f54d4d;
 }
 
 tr,
@@ -28,7 +28,8 @@ tr:nth-child(even) {
 }
 
 .th-in {
-  margin-left: 25px;
+  padding-left: 20px;
+  text-align: left;
   
 }
 

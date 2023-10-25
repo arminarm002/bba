@@ -36,41 +36,51 @@ if (isset($_SESSION['level'])) {
     <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="/bba/css/template-style.css">
     <link rel="stylesheet" href="/bba/theme/css/self.css">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+
     <script type="text/javascript" src="/bba/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="/bba/js/jquery-ui.min.js"></script>
     <style>
       .weight {
-        width:<?php echo $pweight; ?>%;
+        width:
+          <?php echo $pweight; ?>%;
       }
 
       .fat {
-        width:<?php echo $pfat; ?>%;
+        width:
+          <?php echo $pfat; ?>%;
       }
 
       .vfat {
-        width:<?php echo $pvfat; ?>%;
+        width:
+          <?php echo $pvfat; ?>%;
       }
 
       .muscle {
-        width:<?php echo $pmuscle; ?>%;
+        width:
+          <?php echo $pmuscle; ?>%;
       }
 
       .bodyage {
-        width:<?php echo $pbodyage; ?>%;
+        width:
+          <?php echo $pbodyage; ?>%;
       }
 
       .metabolism {
-        width:<?php echo $pmetabolism; ?>%;
+        width:
+          <?php echo $pmetabolism; ?>%;
       }
 
       .bmi {
-        width:<?php echo $pbmi; ?>%;
-      } 
+        width:
+          <?php echo $pbmi; ?>%;
+      }
     </style>
   </head>
 
-  <body class="size-1520 primary-color-red background-dark">
+  <body class="size-1520 primary-color-red background-dark font-noto">
     <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/navbar.php');
     ?>
@@ -98,7 +108,7 @@ if (isset($_SESSION['level'])) {
           if ($sql->num_rows > 0) { ?>
 
             <table style="width:100%;color:#333333;">
-              <tr>
+              <tr style="color: white;">
                 <th valign="top">วันที่</th>
                 <?php foreach ($sql as $row) {
                   ?>
@@ -111,69 +121,62 @@ if (isset($_SESSION['level'])) {
                 <th class="th-in" valign="top">น้ำหนัก</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <th>
-                    <?php echo $row['user_weight'];
-                    $weight = $row['user_weight']; ?>
+                  <th style="font-size:150%;">
+                    <?php echo $row['user_weight']; ?>
                   </th>
                 <?php } ?>
               </tr>
-              <tr>
+              <tr style="color: white;">
                 <th class="th-in">ไขมันในร่างกาย (%)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <th>
-                    <?php echo $row['user_fat'];
-                    $fat = $row['user_fat']; ?>
+                  <th style="font-size:150%;">
+                    <?php echo $row['user_fat']; ?>
                   </th>
                 <?php } ?>
               </tr>
               <tr>
-                <th>ไขมันในช่องท้อง (หน่วย)</th>
+                <th class="th-in">ไขมันในช่องท้อง (หน่วย)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <th>
-                    <?php echo $row['user_visceralfat'];
-                    $vfat = $row['user_visceralfat']; ?>
+                  <th style="font-size:150%;">
+                    <?php echo $row['user_visceralfat']; ?>
+                  </th>
+                <?php } ?>
+              </tr>
+              <tr style="color: white;">
+                <th class="th-in">กล้ามเนื้อ (%)</th>
+                <?php foreach ($sql as $row) {
+                  ?>
+                  <th style="font-size:150%;">
+                    <?php echo $row['user_muscle']; ?>
                   </th>
                 <?php } ?>
               </tr>
               <tr>
-                <th>กล้ามเนื้อ (%)</th>
+                <th class="th-in">อายุเซลล์ในร่างกาย (ปี)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <th>
-                    <?php echo $row['user_muscle'];
-                    $muscle = $row['user_muscle']; ?>
+                  <th style="font-size:150%;">
+                    <?php echo $row['user_bodyage']; ?>
+                  </th>
+                <?php } ?>
+              </tr>
+              <tr style="color: white;">
+                <th class="th-in">อัตราการเผาผลาญ (kcal)</th>
+                <?php foreach ($sql as $row) {
+                  ?>
+                  <th style="font-size:150%;">
+                    <?php echo $row['user_metabolism']; ?>
                   </th>
                 <?php } ?>
               </tr>
               <tr>
-                <th>อายุเซลล์ในร่างกาย (ปี)</th>
+                <th class="th-in">ดัชนีมวลร่างกายโดยรวม (BMI)</th>
                 <?php foreach ($sql as $row) {
                   ?>
-                  <th>
-                    <?php echo $row['user_bodyage'];
-                    $bodyage = $row['user_bodyage']; ?>
-                  </th>
-                <?php } ?>
-              </tr>
-              <tr>
-                <th>อัตราการเผาผลาญ (kcal)</th>
-                <?php foreach ($sql as $row) {
-                  ?>
-                  <th>
-                    <?php echo $row['user_metabolism'];
-                    $metabolism = $row['user_metabolism']; ?>
-                  </th>
-                <?php } ?>
-              </tr>
-              <tr>
-                <th>ดัชนีมวลร่างกายโดยรวม (BMI)</th>
-                <?php foreach ($sql as $row) {
-                  ?>
-                  <th>
-                    <?php echo $row['user_bmi'];
-                    $bmi = $row['user_bmi']; ?>
+                  <th style="font-size:150%;">
+                    <?php echo $row['user_bmi']; ?>
                   </th>
                 <?php } ?>
               </tr>
@@ -182,18 +185,20 @@ if (isset($_SESSION['level'])) {
           </table>
 
           <div class="pagination" style="text-align: center; margin: 1rem;">
-              <!-- Previous page link -->
-              <?php if($page > 1): ?>
-                <a href="?page=<?= $page -1 ?>">Previous</a>
-              <?php endif ?>
-              <!-- Page links -->
-              <?php for($i = 1; $i <= $totalPages; $i++): ?>
-                <a href="?page=<?= $i ?>" class="<?= $page == $i ? 'active': '' ?>"><?= $i ?></a>
-              <?php endfor ?>
-              <!-- Next page link -->
-              <?php if($page < $totalPages): ?>
-                <a href="?page=<?= $page + 1 ?>">Next</a>
-              <?php endif ?>
+            <!-- Previous page link -->
+            <?php if ($page > 1): ?>
+              <a href="?page=<?= $page - 1 ?>">Previous</a>
+            <?php endif ?>
+            <!-- Page links -->
+            <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+              <a href="?page=<?= $i ?>" class="<?= $page == $i ? 'active' : '' ?>">
+                <?= $i ?>
+              </a>
+            <?php endfor ?>
+            <!-- Next page link -->
+            <?php if ($page < $totalPages): ?>
+              <a href="?page=<?= $page + 1 ?>">Next</a>
+            <?php endif ?>
           </div>
         </div>
       </section>
@@ -203,14 +208,16 @@ if (isset($_SESSION['level'])) {
 
         <!-- น้ำหนัก -->
         <p class="p">
-          น้ำหนัก <u><?php echo $weight; ?></u> กิโลกรัม <br>
-          <div class="row" style="margin-bottom:0px;">
-            <div class="col-2">30</div>
-            <div class="col-2">60</div>
-            <div class="col-2">90</div>
-            <div class="col-2">120</div>
-            <div class="col-2">150</div>
-          </div>
+          น้ำหนัก <u>
+            <?php echo $weight; ?>
+          </u> กิโลกรัม <br>
+        <div class="row" style="margin-bottom:0px;">
+          <div class="col-2">30</div>
+          <div class="col-2">60</div>
+          <div class="col-2">90</div>
+          <div class="col-2">120</div>
+          <div class="col-2">150</div>
+        </div>
         </p>
         <div class="progress">
           <div class="progress-bar weight">
@@ -249,7 +256,7 @@ if (isset($_SESSION['level'])) {
             } ?>
           </u>
         </p>
-        <?php if ($_SESSION['gender'] == "male") {?>
+        <?php if ($_SESSION['gender'] == "male") { ?>
           <div class="row">
             <div class="fat-col-2"></div>
             <div class="fat-col-2"></div>
@@ -300,61 +307,61 @@ if (isset($_SESSION['level'])) {
             <div class="fat-col-2"></div>
             <div class="fat-col-2"></div>
             <div class="fat-col-2 ratate">อ้วน&lt;50&gt;</div>
-            </div>
-          <?php } else if ($_SESSION['gender'] == "female"){
-            ?>
+          </div>
+        <?php } else if ($_SESSION['gender'] == "female") {
+          ?>
             <div class="row">
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2 ratate">ต่ำ &lt;19.9</div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2 ratate">ปกติ &lt;29.9</div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2 ratate">เริ่มอ้วน &lt;34.9</div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2"></div>
-            <div class="fat-col-2 ratate">อ้วน&lt;50&gt;</div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2 ratate">ต่ำ &lt;19.9</div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2 ratate">ปกติ &lt;29.9</div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2 ratate">เริ่มอ้วน &lt;34.9</div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2"></div>
+              <div class="fat-col-2 ratate">อ้วน&lt;50&gt;</div>
             </div>
-          <?php } ?>
+        <?php } ?>
         <div class="progress">
           <div class="progress-bar fat">
             <span class="progress-bar-text">
@@ -413,7 +420,7 @@ if (isset($_SESSION['level'])) {
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3 ratate">อันตรายมาก&lt;30&gt;</div>
-          </div>
+        </div>
         <div class="progress">
           <div class="progress-bar vfat">
             <span class="progress-bar-text">
@@ -452,7 +459,7 @@ if (isset($_SESSION['level'])) {
             } ?>
           </u>
         </p>
-        <?php if ($_SESSION['gender'] == "male") {?>
+        <?php if ($_SESSION['gender'] == "male") { ?>
           <div class="row">
             <div class="mus-col-3"></div>
             <div class="mus-col-3"></div>
@@ -494,71 +501,71 @@ if (isset($_SESSION['level'])) {
             <div class="mus-col-3"></div>
             <div class="mus-col-3"></div>
             <div class="mus-col-3 ratate">สูงมาก&lt;40&gt;</div><!-- 40 -->
-            </div>
-          <?php } else if ($_SESSION['gender'] == "female"){
-            ?>
+          </div>
+        <?php } else if ($_SESSION['gender'] == "female") {
+          ?>
             <div class="row">
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div><!-- 10 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div><!-- 20 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3 ratate">ต่ำ &lt;25.8</div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3 ratate">ปกติ &lt;27.9</div>
-            <div class="mus-col-3 ratate">สูง &lt;29.0</div>
-            <div class="mus-col-3"></div><!-- 30 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div><!-- 40 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div><!-- 10 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3 ratate">สูงมาก&lt;60&gt;</div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div><!-- 10 -->
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div><!-- 20 -->
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3 ratate">ต่ำ &lt;25.8</div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3 ratate">ปกติ &lt;27.9</div>
+              <div class="mus-col-3 ratate">สูง &lt;29.0</div>
+              <div class="mus-col-3"></div><!-- 30 -->
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div><!-- 40 -->
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div><!-- 10 -->
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3"></div>
+              <div class="mus-col-3 ratate">สูงมาก&lt;60&gt;</div>
             </div>
-          <?php } ?>
+        <?php } ?>
         <div class="progress">
           <div class="progress-bar muscle">
             <span class="progress-bar-text">
@@ -567,7 +574,7 @@ if (isset($_SESSION['level'])) {
           </div>
         </div>
         <br>
-        
+
         <!-- อายุเซลล์ร่างกาย -->
         <p class="p">
           <?php echo "อายุเซลล์ร่างกาย = "; ?><u>
@@ -576,11 +583,11 @@ if (isset($_SESSION['level'])) {
           <?php echo " ปี" ?>
         </p>
         <div class="row" style="margin-bottom: 0px;">
-            <div class="col-3">20 ปี</div>
-            <div class="col-3">40 ปี</div>
-            <div class="col-3">60 ปี</div>
-            <div class="col-3">80 ปี</div>
-          </div>
+          <div class="col-3">20 ปี</div>
+          <div class="col-3">40 ปี</div>
+          <div class="col-3">60 ปี</div>
+          <div class="col-3">80 ปี</div>
+        </div>
         <div class="progress">
           <div class="progress-bar bodyage">
             <span class="progress-bar-text">
@@ -592,27 +599,27 @@ if (isset($_SESSION['level'])) {
 
         <!-- อัตราการเผาผลาญ -->
         <div>
-        <p class="p">
-          <?php echo "อัตราการเผาผลาญ = "; ?><u>
-            <?php echo $metabolism; ?>
-          </u>
-          <?php echo " kcal" ?>
-        </p>
-        <div class="row" style="margin-bottom: 0px;">
-          <div class="col-2">500 kcal</div>
-          <div class="col-2">1000 kcal</div>
-          <div class="col-2">1500 kcal</div>
-          <div class="col-2">2000 kcal</div>
-          <div class="col-2">2500 kcal</div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar metabolism">
-            <span class="progress-bar-text">
-              <?php echo $metabolism; ?>kcal
-            </span>
+          <p class="p">
+            <?php echo "อัตราการเผาผลาญ = "; ?><u>
+              <?php echo $metabolism; ?>
+            </u>
+            <?php echo " kcal" ?>
+          </p>
+          <div class="row" style="margin-bottom: 0px;">
+            <div class="col-2">500 kcal</div>
+            <div class="col-2">1000 kcal</div>
+            <div class="col-2">1500 kcal</div>
+            <div class="col-2">2000 kcal</div>
+            <div class="col-2">2500 kcal</div>
           </div>
-        </div>
-        <br>
+          <div class="progress">
+            <div class="progress-bar metabolism">
+              <span class="progress-bar-text">
+                <?php echo $metabolism; ?>kcal
+              </span>
+            </div>
+          </div>
+          <br>
         </div>
 
         <!-- คำนวณค่า BMI -->
@@ -683,7 +690,7 @@ if (isset($_SESSION['level'])) {
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2 ratate">อันตราย &lt;50&gt;</div>
-          </div>
+        </div>
         <div class="progress">
           <div class="progress-bar bmi">
             <span class="progress-bar-text">

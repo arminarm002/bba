@@ -3,7 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
- 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +16,13 @@ session_start();
   <!-- CUSTOM STYLE -->
   <link rel="stylesheet" href="/bba/css/template-style.css">
   <link rel="stylesheet" href="/bba/theme/css/self.css">
-  <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 </head>
 
-<body class="size-1520 primary-color-red background-dark"> 
+<body class="size-1520 primary-color-red background-dark font-noto">
   <?php
   include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/navbar.php');
   ?>
