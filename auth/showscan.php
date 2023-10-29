@@ -207,10 +207,10 @@ if (isset($_SESSION['level'])) {
         <h1> ประมวลค่าร่างกาย (ล่าสุด) </h1>
 
         <!-- น้ำหนัก -->
-        <p class="p">
-          น้ำหนัก <u>
+        <p class="p" style="margin-bottom: 0px;">
+          น้ำหนัก <b><u>
             <?php echo $weight; ?>
-          </u> กิโลกรัม <br>
+          </u></b> กิโลกรัม <br>
         <div class="row" style="margin-bottom:0px;">
           <div class="col-2">30</div>
           <div class="col-2">60</div>
@@ -222,7 +222,7 @@ if (isset($_SESSION['level'])) {
         <div class="progress">
           <div class="progress-bar weight">
             <span class="progress-bar-text">
-              <?php echo $weight; ?>กก.
+              <b><?php echo $weight; ?></b>กก.
             </span>
           </div>
         </div>
@@ -230,8 +230,8 @@ if (isset($_SESSION['level'])) {
 
         <!-- คำนวณไขมันในร่างกาย -->
         <p class="p">
-          <?php echo "% ไขมันในร่างกาย = " . $fat . " : อยู่ในเกณฑ์ ";
-          ?><u>
+          <?php echo "% ไขมันในร่างกาย = <b>" . $fat . "</b> : อยู่ในเกณฑ์ ";
+          ?><b><u>
             <?php
             if ($_SESSION['gender'] == "male") {
               if ($fat <= 9) {
@@ -254,7 +254,7 @@ if (isset($_SESSION['level'])) {
                 echo "อ้วน";
               }
             } ?>
-          </u>
+          </u></b>
         </p>
         <?php if ($_SESSION['gender'] == "male") { ?>
           <div class="row">
@@ -365,7 +365,7 @@ if (isset($_SESSION['level'])) {
         <div class="progress">
           <div class="progress-bar fat">
             <span class="progress-bar-text">
-              <?php echo $fat; ?>%
+              <b><?php echo $fat; ?>%</b>
             </span>
           </div>
         </div>
@@ -373,8 +373,8 @@ if (isset($_SESSION['level'])) {
 
         <!-- คำนวณไขมันในช่องท้อง -->
         <p class="p">
-          <?php echo "ไขมันในช่องท้อง = " . $vfat . " : อยู่ในเกณฑ์ ";
-          ?><u>
+          <?php echo "ไขมันในช่องท้อง = <b>" . $vfat . "</b> : อยู่ในเกณฑ์ ";
+          ?><b><u>
             <?php
             if ($vfat <= 2) {
               echo "สมบูรณ์";
@@ -387,7 +387,7 @@ if (isset($_SESSION['level'])) {
             } else if ($vfat > 15) {
               echo "อันตรายมาก";
             } ?>
-          </u>
+          </u></b>
         </p>
         <div class="row">
           <div class="vfat-col-3"></div>
@@ -424,7 +424,7 @@ if (isset($_SESSION['level'])) {
         <div class="progress">
           <div class="progress-bar vfat">
             <span class="progress-bar-text">
-              <?php echo $vfat; ?>%
+              <b><?php echo $vfat; ?>%</b>
             </span>
           </div>
         </div>
@@ -432,8 +432,8 @@ if (isset($_SESSION['level'])) {
 
         <!-- คำนวณกล้ามเนื้อ -->
         <p class="p">
-          <?php echo "% กล้ามเนื้อในร่างกาย = " . $muscle . " : อยู่ในเกณฑ์ ";
-          ?><u>
+          <?php echo "% กล้ามเนื้อในร่างกาย = <b>" . $muscle . "</b> : อยู่ในเกณฑ์ ";
+          ?><b><u>
             <?php
             if ($_SESSION['gender'] == "male") {
               if ($muscle <= 32.8) {
@@ -457,7 +457,7 @@ if (isset($_SESSION['level'])) {
                 echo "สูงมาก";
               }
             } ?>
-          </u>
+          </u></b>
         </p>
         <?php if ($_SESSION['gender'] == "male") { ?>
           <div class="row">
@@ -569,17 +569,17 @@ if (isset($_SESSION['level'])) {
         <div class="progress">
           <div class="progress-bar muscle">
             <span class="progress-bar-text">
-              <?php echo $muscle; ?>%
+              <b><?php echo $muscle; ?>%</b>
             </span>
           </div>
         </div>
         <br>
 
         <!-- อายุเซลล์ร่างกาย -->
-        <p class="p">
-          <?php echo "อายุเซลล์ร่างกาย = "; ?><u>
-            <?php echo $bodyage; ?>
-          </u>
+        <p class="p" style="margin-bottom: 0px;">
+          <?php echo "อายุเซลล์ร่างกาย = "; ?><b><u>
+            <?php echo $bodyage;?>
+          </u></b>
           <?php echo " ปี" ?>
         </p>
         <div class="row" style="margin-bottom: 0px;">
@@ -591,7 +591,7 @@ if (isset($_SESSION['level'])) {
         <div class="progress">
           <div class="progress-bar bodyage">
             <span class="progress-bar-text">
-              <?php echo $bodyage; ?>ปี
+              <b><?php echo $bodyage; ?> ปี</b>
             </span>
           </div>
         </div>
@@ -599,9 +599,9 @@ if (isset($_SESSION['level'])) {
 
         <!-- อัตราการเผาผลาญ -->
         <div>
-          <p class="p">
+          <p class="p" style="margin-bottom: 0px;">
             <?php echo "อัตราการเผาผลาญ = "; ?><u>
-              <?php echo $metabolism; ?>
+              <b><?php echo $metabolism; ?></b>
             </u>
             <?php echo " kcal" ?>
           </p>
@@ -615,7 +615,7 @@ if (isset($_SESSION['level'])) {
           <div class="progress">
             <div class="progress-bar metabolism">
               <span class="progress-bar-text">
-                <?php echo $metabolism; ?>kcal
+                <b><?php echo $metabolism; ?>kcal</b>
               </span>
             </div>
           </div>
@@ -624,8 +624,8 @@ if (isset($_SESSION['level'])) {
 
         <!-- คำนวณค่า BMI -->
         <p class="p">
-          <?php echo "BMI = " . $bmi . " : อยู่ในเกณฑ์ ";
-          ?><u>
+          <?php echo "BMI = <b><u>" . $bmi . "</u></b> : อยู่ในเกณฑ์ ";
+          ?><b><u>
             <?php
             if ($bmi <= 18.5) {
               echo "ผอม";
@@ -638,7 +638,7 @@ if (isset($_SESSION['level'])) {
             } else if ($bmi > 30) {
               echo "อ้วนมาก (อันตราย)";
             } ?>
-          </u>
+          </u></b>
         </p>
         <div class="row">
           <div class="fat-col-2"></div>
@@ -694,7 +694,7 @@ if (isset($_SESSION['level'])) {
         <div class="progress">
           <div class="progress-bar bmi">
             <span class="progress-bar-text">
-              <?php echo $bmi; ?>
+              <b><?php echo $bmi; ?></b>
             </span>
           </div>
         </div>

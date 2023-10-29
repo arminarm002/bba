@@ -6,6 +6,10 @@ session_start();
 
 <head>
   <meta charset="UTF-8">
+  <meta name='keywords' content='ลดน้ำหนัก, อาหารเสริม, สุขภาพ, ดูแลตัวเอง'>
+  <meta name='description' content='เว็บไซต์ให้คำปรึกษาผู้ที่ต้องการลดน้ำหนักหรือดูแลตัวเอง'>
+  <meta name='copyright' content='BBA Team'>
+  <meta name='robots' content='index,follow'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free responsive business website template</title>
   <link rel="stylesheet" href="/bba/css/components.css">
