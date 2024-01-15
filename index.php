@@ -37,81 +37,45 @@ session_start();
       <!-- Main Carousel -->
       <div
         class="s-12 margin-bottom carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-hide-arrows background-dark">
-        <div class="item background-image" style="background-image:url(img/carousel-01.jpg)">
+        <div class="item background-image" style="background-image:url(img/carousel-04.jpg)">
           <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">
-            We are Web design Heroes</p>
-          <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer
-            interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+            ลดน้ำหนักร่วมกัน</p><br>
+          <p class="text-padding text-size-20 text-dark text-uppercase background-white">การควบคุมอาหาร การสร้างกล้ามเนื้อแทนที่ไขมัน การเผาผลาญอย่างถูกวิธี</p>
         </div>
-        <div class="item background-image" style="background-image:url(img/carousel-02.jpg)">
+        <div class="item background-image" style="background-image:url(img/carousel-05.jpg)">
           <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">
-            Inspired by Technologies</p>
-          <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer
-            interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+            พัฒนาตัวเองร่วมกัน</p><br>
+          <p class="text-padding text-size-20 text-dark text-uppercase background-white">นอกเหนือจากการเปลี่ยนรูปร่าง การพัฒนาทางความคิดก็เป็นสิ่งสำคัญในการดำเนินชีวิต</p>
         </div>
-        <div class="item background-image" style="background-image:url(img/carousel-03.jpg)">
+        <div class="item background-image" style="background-image:url(img/carousel-06.jpg)">
           <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">
-            CSS and HTML is our Playground</p>
-          <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer
-            interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+            เรียนรู้ร่วมกัน</p><br>
+          <p class="text-padding text-size-20 text-dark text-uppercase background-white">รับองค์ความรู้ เพื่อการสร้างธุรกิจที่ยั่งยืน รวมถึงการสร้างมรดกให้ลูกหลาน</p>
         </div>
       </div>
     </section>
 
     <!-- SECTION 1 -->
     <section class="grid margin text-center">
-      <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-red">
+      <a href="01weightloss.php" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-red">
         <i class="icon-sli-equalizer text-size-60 text-white center margin-bottom-15"></i>
-        <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">Unlimited Color Variants
+        <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">การลดน้ำหนักอย่างยั่งยืน
         </h3>
       </a>
       <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-blue">
         <i class="icon-sli-layers text-size-60 text-white center margin-bottom-15"></i>
-        <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">Many Reusable Elements
+        <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">สารอาหารที่มีประโยชน์ต่อร่างกาย
         </h3>
       </a>
-
-      <!-- Image-->
-      <img class="m-12 l-6 l-row-2 margin-bottom" src="img/img-06.jpg">
-
       <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-orange">
         <i class="icon-sli-diamond text-size-60 text-white center margin-bottom-15"></i>
-        <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">Responsive Layoute</h3>
+        <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">ออกกำลังกายอย่างง่าย</h3>
       </a>
       <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-aqua">
         <i class="icon-sli-share text-size-60 text-white center margin-bottom-15"></i>
-        <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">Clean Modern Code</h3>
+        <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">ผลิตภัณฑ์เสริมอาหาร</h3>
       </a>
     </section>
-
-    <!-- SECTION 2 -->
-    <section class="grid section margin-bottom background-dark">
-      <h2 class="s-12 l-6 center text-thin text-size-30 text-white text-uppercase margin-bottom-30">Responsive
-        <b>Parallax Background</b>
-      </h2>
-      <p class="s-12 l-6 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-        tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing
-        elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    </section>
-
-    <!-- SECTION 3 -->
-    <section class="grid margin">
-      <!-- Image-->
-      <img class="s-12 m-6 margin-bottom" src="img/img-01.jpg">
-
-      <div class="s-12 m-6 padding-2x margin-bottom background-blue">
-        <h2 class="text-strong text-size-50 text-line-height-1">Nonummy nibh euismod tincidunt ut laoreet<br> massa nec
-          orci accusamus auctor aute</h2>
-        <ul>
-          <li>Sed diam nonummy nibh euismod tincidunt ut laoreet</li>
-          <li>Dolore magna aliquam erat volutpat</li>
-          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
-          <li>Sed diam nonummy nibh euismod tincidunt ut laoreet</li>
-          <li>Dolore magna aliquam erat volutpat</li>
-        </ul>
-      </div>
-    </section>
-
   </main>
   <?php
   include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/footer.html');

@@ -1415,7 +1415,7 @@ section, header {
   width: auto;
 }
 .carousel-fade-transition .item {
-    padding: 190px 0;
+    padding: 380px 0 70px 0;
 }
 .background-image.background-image-object {
   position: absolute;
