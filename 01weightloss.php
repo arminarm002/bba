@@ -106,7 +106,7 @@ session_start();
           เพียงแต่เปลี่ยนประเภทของอาหารเท่านั้น</p>
         <div class="row" style="margin:auto;">
           <div class="col-6">
-            <img src=/bba/img/info/1-1.webp class="border border-warning border-2 img-fluid">
+            <img src=/bba/img/info/1-1.jpg class="border border-warning border-2 img-fluid">
           </div>
           <div class="col-6">
             <img src=/bba/img/info/1-2.jpg class="border border-warning border-2 img-fluid">
