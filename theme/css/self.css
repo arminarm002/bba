@@ -116,6 +116,9 @@ button {
 .font-noto{
   font-family: 'Noto Sans Thai', sans-serif !important;
 }
+.text-red{
+  color: #cf5c5c !important
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
