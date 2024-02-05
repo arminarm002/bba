@@ -67,11 +67,11 @@ session_start();
         <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">สารอาหารที่มีประโยชน์ต่อร่างกาย
         </h3>
       </a>
-      <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-orange">
+      <a href="03exercise.php" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-orange">
         <i class="icon-sli-diamond text-size-60 text-white center margin-bottom-15"></i>
         <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">ออกกำลังกายอย่างสม่ำเสมอ</h3>
       </a>
-      <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-aqua">
+      <a href="04food.php" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-aqua">
         <i class="icon-sli-share text-size-60 text-white center margin-bottom-15"></i>
         <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">ผลิตภัณฑ์เสริมอาหาร</h3>
       </a>
