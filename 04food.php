@@ -37,38 +37,151 @@ session_start();
       <div class="s-12 padding-2x">
         <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-10">
           อาหารที่เสริมสร้างสุขภาพดี</h1>
-        <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;การออกกำลังกายอย่างสม่ำเสมอและเหมาะสม
-          จะทำให้ร่างกายมีสุขภาพแข็งแรง สามารถป้องกัน รักษา และฟื้นฟูสภาพร่างกายได้
-          โดยทั่วไปแล้วจะทำให้เกิดการเปลี่ยนแปลงทางร่างกาย
-          ประโยชน์ของการออกกำลังกายเพื่อสุขภาพ<br>
-          1. สุขภาพแข็งแรง<br>
-          2. การเจริญเติบโตในวัยเด็กจะดี ทำให้สูงขึ้น<br>
-          3. ชีพจรลดลง<br>
-          4. ปอดและหัวใจแข็งแรงขึ้น<br>
-          5. ความดันโลหิตลดลง<br>
-          6. ป้องกันโรคเบาหวานได้<br>
-          7. เส้นเลือดมีขนาดใหญ่ขึ้น โอกาสจถูกอุดตันน้อยลง<br>
-          8. ลดระดับไขมันในเส้นเลือด<br>
-          9. เลือดไปเลี้ยงสมองมากขึ้น ความคิดแจ่มใส<br>
-          10. สมรรถภาพทางเพศดีขึ้น<br>
-          11. ลดและแก้ความเครียด และซึมเศร้าได้<br>
-          12. ออกซิเจนไปเลี้ยงทุกส่วนของร่างกายและจิตใจ<br>
-          13. ระบบย่อยอาหารและระบบขับถ่ายดีขึ้น<br>
-          14. ทำให้หลับสนิทและหลับนาน<br>
-          15. กรณีต้องลดน้ำหนัก ควรควบคุมอาหารไปด้วยจะช่วยได้มากขึ้น<br>
-          16. เมื่อออกกำลังกายติดต่อกันประมาณ 30 นาทีขึ้นไป ร่างกายจะหลั่งสาร Endorphins ออกมา ทำให้จิตใจสบาย
-        </p><br>
         <div class="row" style="margin:auto;">
-          <div class="col-6">
-            <img src=/bba/img/info/3-1.jpg class="border border-warning border-2 img-fluid">
+          <div class="col-8">
+            <h2>1. บอดี้คีย์</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;มีส่วนประกอบสำคัญ ได้แก่ โปรตีนจากพืช (ถั่วเหลืองและเมล็ดเจีย) ใยอาหาร
+              คาร์โบไฮเดรต ไขมัน วิตามินและแร่ธาตุที่สำคัญต่างๆ เพื่อให้พลังงานและสารอาหารอย่างเหมาะสมสำหรับหนึ่งมื้อ
+              ใยอาหารเพิ่มกากในระบบทางเดินอาหารและช่วยกระตุ้นการขับถ่าย (ครบ 5 หมู่/มื้อ) มีทั้งหมด 5 รสชาติ ได้แก่ ชานม
+              โกโก้ กล้วย เบอร์รี่ กาแฟ</p>
           </div>
-          <div class="col-6">
-            <img src=/bba/img/info/3-2.jpg class="border border-warning border-2 img-fluid">
+          <div class="col-4">
+            <img src=/bba/img/product/01.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
           </div>
+          <hr>
         </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-4">
+            <img src=/bba/img/product/02.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <div class="col-8">
+            <h2>2. โปรตีน</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;ผลิตภัณฑ์เสริมอาหารโปรตีนสกัดจากถั่วเหลือง ข้าวสาลี และถั่ว
+              ส่วนประกอบอื่นๆแตกต่างกันขึ้นอยู่กับแต่ละรสชาติ มีทั้งหมด 4 รสชาติ ได้แก่ รสจืด เบอร์รี่ ชาเขียว ช็อกโกแลต
+            </p>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-8">
+            <h2>3. เอ็กซ์เอส อิกไนท์ ไลท์ พาวเดอร์</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;ผลิตภัณฑ์เสริมอาหารสำหรับผู้ที่ใส่ใจตัวเอง มีแอล-กลูตามีน และสารสกัดจากส้มสีเลือด
+              นำเข้าจากเมืองซิซิลี ประเทศอิตาลี กลิ่นหอม รสชาติเข้มข้น รับประทานง่ายพกพาสะดวก ช่วยลดไขมันโดยรวมในร่างกาย
+            </p>
+          </div>
+          <div class="col-4">
+            <img src=/bba/img/product/10.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-4">
+            <img src=/bba/img/product/11.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <div class="col-8">
+            <h2>4. เอ็กซ์เอส เอสเซนเชียล อะมิโน แอซิด พลัส</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;ผลิตภัณฑ์เสริมอาหารที่มีส่วนประกอบสําคัญอย่างกรดอะมิโนจำเป็น (EAA) รสชาติอร่อย ทานง่าย สะดวก
+              ช่วยเสริมสร้างกล้ามเนื้อหลังออกกำลังกาย</p>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-8">
+            <h2>5. ดับเบิ้ลเอ็กซ์ ไฟโตเบลนด์</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;ดับเบิ้ล เอ็กซ์ ไฟโตเบลนด์ ให้วิตามินรวม เกลือแร่รวม และสารสกัดจากพืช 5 สี
+              มีส่วนผสมของสารสกัดไฟโตนิวเทรียนท์จากพืชที่ได้จากผักผลไม้และสมุนไพร ซึ่งเป็นสูตรเฉพาะของนิวทริไลท์
+              ไม่เจือสี ไม่ใช้วัตถุแต่งกลิ่นรส และวัตถุกันเสีย</p>
+          </div>
+          <div class="col-4">
+            <img src=/bba/img/product/08.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-4">
+            <img src=/bba/img/product/03.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <div class="col-8">
+            <h2>6. เลซิติน อี</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;เลซิติน อี ที่ประกอบด้วยเลซิตินที่สกัดได้จากน้ำมันถั่วเหลือง และวิตามินอีที่สกัดได้จากน้ำมันจากพืช
+              นิวทริไลท์ เลซิติน อี มีรสหวาน และแต่งกลิ่นด้วยน้ำผึ้ง คาร็อบและเมเปิ้ล วอลนัท
+              เลซิตินเป็นไขมันชนิดฟอสโฟไลปิด ซึ่งมีฟอสฟาติดิลโคลีนเป็นส่วนประกอบหลัก</p>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-8">
+            <h2>7. น้ำมันปลา</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;ผลิตภัณฑ์เสริมอาหาร นิวทริไลท์ น้ำมันปลา ให้กรดไขมันกลุ่มโอเมก้า-3 ได้แก่ อีพีเอ และดีเอชเอ ซึ่งเป็นไขมันดี ช่วยลดความเสี่ยงการเกิดโรคหลอดเลือดหัวใจ ยับยั้งการเกิดปฏิกิริยาออกซิเดชัน การอักเสบ และการแข็งตัวของเลือด</p>
+          </div>
+          <div class="col-4">
+            <img src=/bba/img/product/06.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-4">
+            <img src=/bba/img/product/04.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <div class="col-8">
+            <h2>8. กรีน-ที พลัส</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;ผลิตภัณฑ์เสริมอาหาร มีส่วนผสมของสารสกัดจากชาเขียว ปราศจากคาเฟอีน และสารสกัดจากสาหร่ายสีน้ำตาล</p>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-8">
+            <h2>9. เลส-เตอรอล</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;ผลิตภัณฑ์เสริมอาหารสารสกัดจากชาเขียว ช่วยลดการเกิดลิ่มเลือดอุดตัน ช่วยดีท็อกซ์สารพิษออกจากร่างกาย ช่วยลดคอเลสเตอรอล ช่วยสลายเซลลูไลท์ กระชับสัดส่วน ช่วยกำจัดไขมันเลวออกจากตับ</p>
+          </div>
+          <div class="col-4">
+            <img src=/bba/img/product/05.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row" style="margin:auto;">
+          <div class="col-4">
+            <img src=/bba/img/product/07.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <br>
+          </div>
+          <div class="col-8">
+            <h2>10. แคลโลว์</h2>
+            <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;ผลิตภัณฑ์เสริมอาหารประกอบด้วยสารสกัดจากถั่วขาว สารสกัดจากถั่วเหลือง และพาร์สลีย์เข้มข้น บล็อคแป้ง บล็อคน้ำตาล ช่วยยับยั้งการดูดซึมคาร์โบไฮเดรตและน้ำตาลในลำไส้ ทำให้ช่วยเพิ่มประสิทธิภาพในการควบคุมน้ำหนัก ช่วยป้องกันไม่ให้อินซูลินในเลือดเพิ่มขึ้นอย่างรวดเร็ว ช่วยควบคุมอาการอยากอาหารได้ดีขึ้น มีสารช่วยต่อต้านอนุมูลอิสระ</p>
+          </div>
+          <hr>
+        </div>
+
         <br>
         <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-10">
-        โปรโมชั่น ประจำเดือน กุมภาพันธ์</h1>
+          โปรโมชั่น ประจำเดือน กุมภาพันธ์</h1>
       </div>
     </section>
   </main>
