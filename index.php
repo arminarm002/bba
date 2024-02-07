@@ -11,15 +11,15 @@ session_start();
   <meta name='copyright' content='BBA Team'>
   <meta name='robots' content='index,follow'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free responsive business website template</title>
-  <link rel="stylesheet" href="/bba/css/components.css">
-  <link rel="stylesheet" href="/bba/css/icons.css">
-  <link rel="stylesheet" href="/bba/css/responsee.css">
-  <link rel="stylesheet" href="/bba/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="/bba/owl-carousel/owl.theme.css">
+  <title>body health & wellness</title>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
   <!-- CUSTOM STYLE -->
-  <link rel="stylesheet" href="/bba/css/template-style.css">
-  <link rel="stylesheet" href="/bba/theme/css/self.css">
+  <link rel="stylesheet" href="css/template-style.css">
+  <link rel="stylesheet" href="theme/css/self.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
@@ -28,7 +28,7 @@ session_start();
 
 <body class="size-1520 primary-color-red background-dark font-noto">
   <?php
-  include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/navbar.php');
+  include('components/navbar.php');
   ?>
   <!-- MAIN -->
   <main role="main">
@@ -78,7 +78,7 @@ session_start();
     </section>
   </main>
   <?php
-  include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/footer.html');
+  include('components/footer.html');
   ?>
 </body>
 

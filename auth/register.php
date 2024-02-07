@@ -2,9 +2,12 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
+<meta name='keywords' content='ลดน้ำหนัก, อาหารเสริม, สุขภาพ, ดูแลตัวเอง'>
+  <meta name='description' content='เว็บไซต์ให้คำปรึกษาผู้ที่ต้องการลดน้ำหนักหรือดูแลตัวเอง'>
+  <meta name='copyright' content='BBA Team'>
+  <meta name='robots' content='index,follow'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Log in/Sign in</title>
+  <title>body health & wellness</title>
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/icons.css">
   <link rel="stylesheet" href="../css/responsee.css">
@@ -12,7 +15,7 @@
   <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
   <!-- CUSTOM STYLE -->
   <link rel="stylesheet" href="../css/template-style.css">
-  <link rel="stylesheet" href="/bba/theme/css/self.css">
+  <link rel="stylesheet" href="../theme/css/self.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
   <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
@@ -21,7 +24,7 @@
 
 <body class="size-1520 primary-color-red background-dark font-noto">
   <?php
-  include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/navbar.php');
+  include('../components/navbar.php');
   ?>
 
   <!-- MAIN -->
@@ -91,7 +94,7 @@
     </section>
   </main>
   <?php
-  include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/footer.html');
+  include('../components/footer.html');
   ?>
 
 </body>
