@@ -1,6 +1,6 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
-// Register
+include('connectdb.php');
+
 if (isset($_POST['scan'])) {
   $id =$_POST['id'];
   $date = $_POST['date'];
@@ -20,13 +20,13 @@ if (isset($_POST['scan'])) {
       echo '<script language="javascript">';
       echo 'alert("บันทึกข้อมูลเรียบร้อย")';
       echo '</script>';
-      header("refresh: 1; url=/bba/auth/showscan.php");
+      header("refresh: 1; url=showscan.php");
 
     } else {
       echo '<script language="javascript">';
       echo 'alert("เกิดข้อผิดพลาด")';
       echo '</script>';
-      header("refresh: 1; url=/bba/auth/profile.php");
+      header("refresh: 1; url=profile.php");
     }
 }
 ?>

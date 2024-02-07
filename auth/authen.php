@@ -1,5 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/bba/auth/connectdb.php');
+include('connectdb.php');
 // Register
 if (isset($_POST['add'])) {
   $username = $_POST['username'];
@@ -13,7 +13,7 @@ if (isset($_POST['add'])) {
   if ($sql->num_rows > 0) {
     echo '
     <script language="javascript"> 
-    alert("This email is already done, Can not register again.")
+    alert("ชื่อซ้ำ กรุณาเปลี่ยน")
     </script>
     ';
     header("refresh: 1; url=register.php");
@@ -27,7 +27,7 @@ if (isset($_POST['add'])) {
       echo '<script language="javascript">';
       echo 'alert("Successfully Registrater")';
       echo '</script>';
-      header("refresh: 1; url=/bba/auth/login.php");
+      header("refresh: 1; url=login.php");
 
     } else {
       echo '<script language="javascript">';
