@@ -32,6 +32,7 @@ if (isset($_SESSION['level'])) {
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/icons.css">
   <link rel="stylesheet" href="../css/responsee.css">
+  <link rel="stylesheet" href="../css/show.css">
   <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
   <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
   <!-- CUSTOM STYLE -->

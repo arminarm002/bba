@@ -11,15 +11,15 @@ session_start();
   <meta name='copyright' content='BBA Team'>
   <meta name='robots' content='index,follow'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free responsive business website template</title>
-  <link rel="stylesheet" href="/bba/css/components.css">
-  <link rel="stylesheet" href="/bba/css/icons.css">
-  <link rel="stylesheet" href="/bba/css/responsee.css">
-  <link rel="stylesheet" href="/bba/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="/bba/owl-carousel/owl.theme.css">
+  <title>body health & wellness</title>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
   <!-- CUSTOM STYLE -->
-  <link rel="stylesheet" href="/bba/css/template-style.css">
-  <link rel="stylesheet" href="/bba/theme/css/self.css">
+  <link rel="stylesheet" href="css/template-style.css">
+  <link rel="stylesheet" href="theme/css/self.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
@@ -28,7 +28,7 @@ session_start();
 
 <body class="size-1520 primary-color-red background-dark font-noto">
   <?php
-  include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/navbar.php');
+  include('components/navbar.php');
   ?>
   <!-- MAIN -->
   <main role="main">
@@ -47,7 +47,7 @@ session_start();
               โกโก้ กล้วย เบอร์รี่ กาแฟ</p>
           </div>
           <div class="col-4">
-            <img src=/bba/img/product/01.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/01.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <hr>
@@ -55,7 +55,7 @@ session_start();
 
         <div class="row" style="margin:auto;">
           <div class="col-4">
-            <img src=/bba/img/product/02.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/02.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <div class="col-8">
@@ -77,7 +77,7 @@ session_start();
             </p>
           </div>
           <div class="col-4">
-            <img src=/bba/img/product/10.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/10.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <hr>
@@ -85,7 +85,7 @@ session_start();
 
         <div class="row" style="margin:auto;">
           <div class="col-4">
-            <img src=/bba/img/product/11.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/11.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <div class="col-8">
@@ -106,7 +106,7 @@ session_start();
               ไม่เจือสี ไม่ใช้วัตถุแต่งกลิ่นรส และวัตถุกันเสีย</p>
           </div>
           <div class="col-4">
-            <img src=/bba/img/product/08.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/08.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <hr>
@@ -114,7 +114,7 @@ session_start();
 
         <div class="row" style="margin:auto;">
           <div class="col-4">
-            <img src=/bba/img/product/03.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/03.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <div class="col-8">
@@ -131,10 +131,12 @@ session_start();
           <div class="col-8">
             <h2>7. น้ำมันปลา</h2>
             <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;ผลิตภัณฑ์เสริมอาหาร นิวทริไลท์ น้ำมันปลา ให้กรดไขมันกลุ่มโอเมก้า-3 ได้แก่ อีพีเอ และดีเอชเอ ซึ่งเป็นไขมันดี ช่วยลดความเสี่ยงการเกิดโรคหลอดเลือดหัวใจ ยับยั้งการเกิดปฏิกิริยาออกซิเดชัน การอักเสบ และการแข็งตัวของเลือด</p>
+              &nbsp;ผลิตภัณฑ์เสริมอาหาร นิวทริไลท์ น้ำมันปลา ให้กรดไขมันกลุ่มโอเมก้า-3 ได้แก่ อีพีเอ และดีเอชเอ
+              ซึ่งเป็นไขมันดี ช่วยลดความเสี่ยงการเกิดโรคหลอดเลือดหัวใจ ยับยั้งการเกิดปฏิกิริยาออกซิเดชัน การอักเสบ
+              และการแข็งตัวของเลือด</p>
           </div>
           <div class="col-4">
-            <img src=/bba/img/product/06.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/06.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <hr>
@@ -142,7 +144,7 @@ session_start();
 
         <div class="row" style="margin:auto;">
           <div class="col-4">
-            <img src=/bba/img/product/04.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/04.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <div class="col-8">
@@ -157,10 +159,11 @@ session_start();
           <div class="col-8">
             <h2>9. เลส-เตอรอล</h2>
             <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;ผลิตภัณฑ์เสริมอาหารสารสกัดจากชาเขียว ช่วยลดการเกิดลิ่มเลือดอุดตัน ช่วยดีท็อกซ์สารพิษออกจากร่างกาย ช่วยลดคอเลสเตอรอล ช่วยสลายเซลลูไลท์ กระชับสัดส่วน ช่วยกำจัดไขมันเลวออกจากตับ</p>
+              &nbsp;ผลิตภัณฑ์เสริมอาหารสารสกัดจากชาเขียว ช่วยลดการเกิดลิ่มเลือดอุดตัน ช่วยดีท็อกซ์สารพิษออกจากร่างกาย
+              ช่วยลดคอเลสเตอรอล ช่วยสลายเซลลูไลท์ กระชับสัดส่วน ช่วยกำจัดไขมันเลวออกจากตับ</p>
           </div>
           <div class="col-4">
-            <img src=/bba/img/product/05.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/05.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <hr>
@@ -168,13 +171,16 @@ session_start();
 
         <div class="row" style="margin:auto;">
           <div class="col-4">
-            <img src=/bba/img/product/07.jpg class="border border-warning border-2 img-fluid" style="margin:auto;">
+            <img src=img/product/07.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
           <div class="col-8">
             <h2>10. แคลโลว์</h2>
             <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;ผลิตภัณฑ์เสริมอาหารประกอบด้วยสารสกัดจากถั่วขาว สารสกัดจากถั่วเหลือง และพาร์สลีย์เข้มข้น บล็อคแป้ง บล็อคน้ำตาล ช่วยยับยั้งการดูดซึมคาร์โบไฮเดรตและน้ำตาลในลำไส้ ทำให้ช่วยเพิ่มประสิทธิภาพในการควบคุมน้ำหนัก ช่วยป้องกันไม่ให้อินซูลินในเลือดเพิ่มขึ้นอย่างรวดเร็ว ช่วยควบคุมอาการอยากอาหารได้ดีขึ้น มีสารช่วยต่อต้านอนุมูลอิสระ</p>
+              &nbsp;ผลิตภัณฑ์เสริมอาหารประกอบด้วยสารสกัดจากถั่วขาว สารสกัดจากถั่วเหลือง และพาร์สลีย์เข้มข้น บล็อคแป้ง
+              บล็อคน้ำตาล ช่วยยับยั้งการดูดซึมคาร์โบไฮเดรตและน้ำตาลในลำไส้ ทำให้ช่วยเพิ่มประสิทธิภาพในการควบคุมน้ำหนัก
+              ช่วยป้องกันไม่ให้อินซูลินในเลือดเพิ่มขึ้นอย่างรวดเร็ว ช่วยควบคุมอาการอยากอาหารได้ดีขึ้น
+              มีสารช่วยต่อต้านอนุมูลอิสระ</p>
           </div>
           <hr>
         </div>
@@ -182,11 +188,65 @@ session_start();
         <br>
         <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-10">
           โปรโมชั่น ประจำเดือน กุมภาพันธ์</h1>
+        <div class="row">
+          <div class="col-4">
+            <a href="img/product/pro01.jpg" target="_blank">
+              <img src="img/product/pro01.jpg" class="d-block w-100"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="img/product/pro02.jpg" target="_blank">
+              <img src="img/product/pro02.jpg" class="d-block w-100"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="img/product/pro03.jpg" target="_blank">
+              <img src="img/product/pro03.jpg" class="d-block w-100"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            </a>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-4">
+            <a href="img/product/pro04.jpg" target="_blank">
+              <img src="img/product/pro04.jpg" class="d-block w-100"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="img/product/pro05.jpg" target="_blank">
+              <img src="img/product/pro05.jpg" class="d-block w-100"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="img/product/pro06.jpg" target="_blank">
+              <img src="img/product/pro06.jpg" class="d-block w-100"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            </a>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-6">
+            <a href="img/product/pro07.jpg" target="_blank">
+              <img src="img/product/pro07.jpg" class="d-block w-100"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="img/product/pro00.jpg" target="_blank">
+              <img src="img/product/pro00.jpg" class="d-block w-100"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <?php
-  include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/footer.html');
+  include('components/footer.html');
   ?>
 </body>
 

@@ -11,15 +11,15 @@ session_start();
   <meta name='copyright' content='BBA Team'>
   <meta name='robots' content='index,follow'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free responsive business website template</title>
-  <link rel="stylesheet" href="/bba/css/components.css">
-  <link rel="stylesheet" href="/bba/css/icons.css">
-  <link rel="stylesheet" href="/bba/css/responsee.css">
-  <link rel="stylesheet" href="/bba/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="/bba/owl-carousel/owl.theme.css">
+  <title>body health & wellness</title>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
   <!-- CUSTOM STYLE -->
-  <link rel="stylesheet" href="/bba/css/template-style.css">
-  <link rel="stylesheet" href="/bba/theme/css/self.css">
+  <link rel="stylesheet" href="css/template-style.css">
+  <link rel="stylesheet" href="theme/css/self.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
@@ -28,7 +28,7 @@ session_start();
 
 <body class="size-1520 primary-color-red background-dark font-noto">
   <?php
-  include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/navbar.php');
+  include('components/navbar.php');
   ?>
   <!-- MAIN -->
   <main role="main">
@@ -37,7 +37,8 @@ session_start();
       <div class="s-12 padding-2x">
         <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-10">
           การออกกำลังกายสม่ำเสมอ</h1>
-        <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;การออกกำลังกายอย่างสม่ำเสมอและเหมาะสม
+        <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp;การออกกำลังกายอย่างสม่ำเสมอและเหมาะสม
           จะทำให้ร่างกายมีสุขภาพแข็งแรง สามารถป้องกัน รักษา และฟื้นฟูสภาพร่างกายได้
           โดยทั่วไปแล้วจะทำให้เกิดการเปลี่ยนแปลงทางร่างกาย
           ประโยชน์ของการออกกำลังกายเพื่อสุขภาพ<br>
@@ -60,13 +61,13 @@ session_start();
         </p><br>
         <div class="row" style="margin:auto;">
           <div class="col-4">
-            <img src=/bba/img/info/3-1.jpg class="border border-warning border-2 img-fluid">
+            <img src=img/info/3-1.jpg class="border border-warning border-2 img-fluid">
           </div>
           <div class="col-4">
-            <img src=/bba/img/info/3-2.jpg class="border border-warning border-2 img-fluid">
+            <img src=img/info/3-2.jpg class="border border-warning border-2 img-fluid">
           </div>
           <div class="col-4">
-            <img src=/bba/img/info/3-3.jpg class="border border-warning border-2 img-fluid">
+            <img src=img/info/3-3.jpg class="border border-warning border-2 img-fluid">
           </div>
         </div>
         <br>
@@ -74,7 +75,7 @@ session_start();
     </section>
   </main>
   <?php
-  include($_SERVER['DOCUMENT_ROOT'] . '/bba/components/footer.html');
+  include('components/footer.html');
   ?>
 </body>
 
