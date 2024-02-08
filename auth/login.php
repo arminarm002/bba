@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name='keywords' content='ลดน้ำหนัก, อาหารเสริม, สุขภาพ, ดูแลตัวเอง'>
   <meta name='description' content='เว็บไซต์ให้คำปรึกษาผู้ที่ต้องการลดน้ำหนักหรือดูแลตัวเอง'>
   <meta name='copyright' content='BBA Team'>
@@ -64,7 +64,6 @@
           </form>
           <a href="register.php"><button class="bubbly-button"
               style="background-color: #00b5a6;">สมัครสมาชิก</button></a>
-
         </div>
       </div>
     </section>
