@@ -12,7 +12,7 @@ if (isset($_SESSION['level'])) {
     $metabolism = $row['user_metabolism'];
     $bmi = $row['user_bmi'];
   }
-  $pweight = ($weight * 100) / 150;
+  $pweight = ($weight * 100) / 180;
   $pfat = ($fat * 100) / 50;
   $pvfat = ($vfat * 100) / 30;
   $pmuscle = ($muscle * 100) / 40;
@@ -88,7 +88,7 @@ if (isset($_SESSION['level'])) {
     <main role="main">
       <!-- TOP SECTION -->
       <header class="grid">
-        <div class="s-12 padding-2x">
+        <div class="s-12">
           <h2 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-20">
             <?php echo $_SESSION['fullname']; ?>
           </h2>

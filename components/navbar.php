@@ -2,7 +2,7 @@
   <!-- Top Navigation -->
   <nav class="s-12 grid background-none background-primary-hightlight">
     <!-- logo -->
-    <a href="../index.php" class="m-12 l-3 padding-2x logo">
+    <a href="../index.php" class="m-12 l-3 padding-2x logo" style="padding: 10px 0px 0px 10px !important;">
       <img src="../img/logo.png">
     </a>
     <div class="top-nav s-12 l-9">
@@ -32,6 +32,6 @@
   </nav>
 </header>
 
-<script type="text/javascript" src="/bba/js/responsee.js"></script>
-<script type="text/javascript" src="/bba/owl-carousel/owl.carousel.js"></script>
-<script type="text/javascript" src="/bba/js/template-scripts.js"></script>
+<script type="text/javascript" src="../js/responsee.js"></script>
+<script type="text/javascript" src="../owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="../js/template-scripts.js"></script>

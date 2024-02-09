@@ -27,7 +27,6 @@
   <?php
   include('../components/navbar.php');
   ?>
-
   <!-- MAIN -->
   <main role="main">
     <!-- TOP SECTION -->
