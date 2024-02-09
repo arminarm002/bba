@@ -12,10 +12,10 @@ if (isset($_POST['scan2'])) {
   $bmi = $_POST['bmi'];
 }
 
-$pweight = ($weight * 100) / 180;
+$pweight = ($weight * 100) / 150;
 $pfat = ($fat * 100) / 50;
 $pvfat = ($vfat * 100) / 30;
-$pmuscle = ($muscle * 100) / 40;
+$pmuscle = ($muscle * 100) / 50;
 $pbodyage = ($bodyage * 100) / 80;
 $pmetabolism = ($metabolism * 100) / 2500;
 $pbmi = ($bmi * 100) / 50;
@@ -37,7 +37,7 @@ $pbmi = ($bmi * 100) / 50;
   <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
   <!-- CUSTOM STYLE -->
   <link rel="stylesheet" href="../css/template-style.css">
-  <link rel="stylesheet" href="../theme/css/self.css">
+  <!-- <link rel="stylesheet" href="../theme/css/self.css"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
   <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
@@ -83,6 +83,9 @@ $pbmi = ($bmi * 100) / 50;
 </head>
 
 <body class="size-1520 primary-color-red background-dark font-noto">
+  <?php
+  include('../components/navbar.php');
+  ?>
   <!-- MAIN -->
   <main role="main" style="margin: 0px 25px;">
     <!-- TOP SECTION -->
@@ -160,11 +163,11 @@ $pbmi = ($bmi * 100) / 50;
             <?php echo $weight; ?>
           </u></b> กิโลกรัม </p>
       <div class="row" style="margin-bottom:0px;">
-        <div class="col-2">30</div>
-        <div class="col-2">60</div>
-        <div class="col-2">90</div>
-        <div class="col-2">120</div>
-        <div class="col-2">150</div>
+        <div class="w-col-2">30</div>
+        <div class="w-col-2">60</div>
+        <div class="w-col-2">90</div>
+        <div class="w-col-2">120</div>
+        <div class="w-col-2">150</div>
       </div>
 
       <div class="progress">
@@ -207,12 +210,110 @@ $pbmi = ($bmi * 100) / 50;
           </u></b>
       </p>
       <?php if ($gender == "male") { ?>
-        <!-- <div class="fat-male"></div> -->
-        <!-- <img src="../img/progress-bar/fat-male.png"> -->
-        
+        <div class="row">
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;9.9 ต่ำ</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;19.9 ปกติ</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;24.9 เริ่มอ้วน</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;50 อ้วน</div>
+        </div>
       <?php } else if ($gender == "female") {
         ?>
-          
+          <div class="row">
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2 ratate">&lt;19.9 ต่ำ</div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2 ratate">&lt;29.9 ปกติ</div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2 ratate">&lt;34.9 เริ่มอ้วน</div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2 ratate">&lt;50 อ้วน</div>
+          </div>
       <?php } ?>
       <div class="progress">
         <div class="progress-bar fat">
@@ -245,23 +346,20 @@ $pbmi = ($bmi * 100) / 50;
       </p>
       <div class="row">
         <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">สมบูรณ์&lt;2</div>
+        <div class="vfat-col-3 ratate">&lt;2 สมบูรณ์</div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">ปกติ&lt;5</div>
-        <div class="vfat-col-3"></div>
-        <div class="vfat-col-3"></div>
-        <div class="vfat-col-3"></div>
-        <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">เล็กน้อย&lt;10</div>
+        <div class="vfat-col-3 ratate">&lt;5 ปกติ</div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">อันตราย&lt;15</div>
+        <div class="vfat-col-3 ratate">&lt;10 เล็กน้อย</div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
+        <div class="vfat-col-3"></div>
+        <div class="vfat-col-3 ratate">&lt;15 อันตราย</div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
@@ -273,7 +371,9 @@ $pbmi = ($bmi * 100) / 50;
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">อันตรายมาก&lt;30&gt;</div>
+        <div class="vfat-col-3"></div>
+        <div class="vfat-col-3"></div>
+        <div class="vfat-col-3 ratate">&lt;30 อันตรายมาก</div>
       </div>
       <div class="progress">
         <div class="progress-bar vfat">
@@ -317,109 +417,108 @@ $pbmi = ($bmi * 100) / 50;
       </p>
       <?php if ($gender == "male") { ?>
         <div class="row">
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div><!-- 10 -->
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div><!-- 20 -->
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div><!-- 30 -->
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3 ratate">ต่ำ &lt;32.8</div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3 ratate">ปกติ &lt;35.7</div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3 ratate">สูง &lt;37.3</div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3"></div>
-          <div class="mus-col-3 ratate">สูงมาก&lt;40&gt;</div><!-- 40 -->
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;32.8 ต่ำ</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;35.7 ปกติ</div>
+          <div class="fat-col-2 ratate">&lt;37.3 สูง</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;50 สูงมาก</div>
         </div>
       <?php } else if ($gender == "female") {
         ?>
           <div class="row">
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div><!-- 10 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div><!-- 20 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3 ratate">ต่ำ &lt;25.8</div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3 ratate">ปกติ &lt;27.9</div>
-            <div class="mus-col-3 ratate">สูง &lt;29.0</div>
-            <div class="mus-col-3"></div><!-- 30 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div><!-- 40 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div><!-- 10 -->
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3"></div>
-            <div class="mus-col-3 ratate">สูงมาก&lt;60&gt;</div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2 ratate">&lt;25.8 ต่ำ</div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2 ratate">&lt;27.9 ปกติ</div>
+            <div class="fat-col-2 ratate">&lt;29 สูง</div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2"></div>
+            <div class="fat-col-2 ratate">&lt;50 สูงมาก</div>
           </div>
       <?php } ?>
       <div class="progress">
@@ -459,7 +558,7 @@ $pbmi = ($bmi * 100) / 50;
 
       <!-- อัตราการเผาผลาญ -->
       <div>
-        <p class="p" style="margin-bottom: 0px;">
+        <p class="p">
           <?php echo "อัตราการเผาผลาญ = "; ?><u>
             <b>
               <?php echo $metabolism; ?>
@@ -467,12 +566,56 @@ $pbmi = ($bmi * 100) / 50;
           </u>
           <?php echo " kcal" ?>
         </p>
-        <div class="row" style="margin-bottom: 0px;">
-          <div class="col-2">500 kcal</div>
-          <div class="col-2">1000 kcal</div>
-          <div class="col-2">1500 kcal</div>
-          <div class="col-2">2000 kcal</div>
-          <div class="col-2">2500 kcal</div>
+        <div class="row">
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;500 kcal</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;1000 kcal</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;1500 kcal</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;2000 kcal</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2 ratate">&lt;2500 kcal</div>
         </div>
         <div class="progress">
           <div class="progress-bar metabolism">
@@ -522,24 +665,19 @@ $pbmi = ($bmi * 100) / 50;
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">ผอม &lt;18.5</div>
+        <div class="fat-col-2 ratate">&lt;18.5 ผอม</div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">ปกติ &lt;22.9</div>
+        <div class="fat-col-2 ratate">&lt;22.9 ปกติ</div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">ท้วม &lt;24.9</div>
-        <div class="fat-col-2"></div>
-        <div class="fat-col-2"></div>
-        <div class="fat-col-2"></div>
-        <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">อ้วน &lt;30</div>
+        <div class="fat-col-2 ratate">&lt;24.9 ท้วม</div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2"></div>
+        <div class="fat-col-2 ratate">&lt;30 อ้วน </div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
@@ -553,7 +691,12 @@ $pbmi = ($bmi * 100) / 50;
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">อันตราย &lt;50&gt;</div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2 ratate">&lt;50 อันตราย</div>
       </div>
       <div class="progress">
         <div class="progress-bar bmi">
@@ -566,6 +709,7 @@ $pbmi = ($bmi * 100) / 50;
       </div>
     </section>
   </main>
+  <hr>
   <?php
   include('../components/footer.html');
   ?>
