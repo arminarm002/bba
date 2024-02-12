@@ -10,6 +10,7 @@
         <li><a href="../index.php">หน้าหลัก</a></li>
         <li><a href="../about-us.php">เกี่ยวกับเรา</a></li>
         <li><a href="../gallery.php">Gallery</a></li>
+        <li><a href="../contact.php">ติดต่อเรา</a></li>
 
         <?php if (isset($_SESSION['level'])) {
           if ($_SESSION['level'] == "2") { ?>

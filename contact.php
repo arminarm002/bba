@@ -35,19 +35,13 @@ session_start();
       <!-- TOP SECTION -->
       <header class="grid">
       <div class="s-12 padding-2x">
-        <h1 class="text-strong text-white text-center center text-size-40 text-uppercase margin-bottom-20">Inspiration</h1>
+        <h1 class="text-strong text-white text-center center text-size-40 text-uppercase margin-bottom-20">Contact Us</h1>
       </div>
     </header>
 
       <section class="grid margin">
-         <img class="s-12 m-6 l-4 margin-bottom" src="img/portfolio/thumb-01.jpg" alt="" />
-         <img class="s-12 m-6 l-4 margin-bottom" src="img/portfolio/thumb-02.jpg" alt="" />
-         <img class="s-12 m-6 l-4 margin-bottom" src="img/portfolio/thumb-03.jpg" alt="" />
-         <img class="s-12 m-6 l-4 margin-bottom" src="img/portfolio/thumb-04.jpg" alt="" />
-         <!-- <img class="s-12 m-6 l-4 margin-bottom" src="img/portfolio/thumb-05.jpg" alt="" />
-         <img class="s-12 m-6 l-4 margin-bottom" src="img/portfolio/thumb-06.jpg" alt="" />
-         <img class="s-12 m-6 l-4 margin-bottom" src="img/portfolio/thumb-07.jpg" alt="" />
-         <img class="s-12 m-6 l-4 margin-bottom" src="img/portfolio/thumb-08.jpg" alt="" /> -->
+         <img class="s-12 m-6 l-6 margin-bottom" src="img/portfolio/thumb-01.jpg" alt="" />
+         <img class="s-12 m-6 l-6 margin-bottom" src="img/portfolio/thumb-01.jpg" alt="" />
       </section>
 
    </main>

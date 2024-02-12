@@ -5,7 +5,7 @@ session_start();
 <html lang="en-US">
 
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name='keywords' content='ลดน้ำหนัก, อาหารเสริม, สุขภาพ, ดูแลตัวเอง'>
   <meta name='description' content='เว็บไซต์ให้คำปรึกษาผู้ที่ต้องการลดน้ำหนักหรือดูแลตัวเอง'>
   <meta name='copyright' content='BBA Team'>
@@ -31,14 +31,13 @@ session_start();
   include('components/navbar.php');
   ?>
   <!-- MAIN -->
-  <main role="main">
+  <main role="main" style="margin: 0px 25px;">
     <!-- TOP SECTION -->
     <header class="grid">
       <div class="s-12 padding-2x">
-        <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-20">About Us</h1>
-        <p class="text-size-20 text-white text-center center text-uppercase">Con nonummy sem integer interdum volutpat
-          dis eget eligendi aliquip dolorum magnam. Iriure duis autem vel<br> eum dolor in hendrerit in vulputate velit
-          esse molestie consequat.</p>
+        <h1 class="text-strong text-white text-center center text-size-40 text-uppercase margin-bottom-20">About Us</h1>
+        <p class="text-size-20 text-white text-center center text-uppercase">เราคือ
+          ทีมผู้สร้างการเปลี่ยนแปลงทางรูปลักษณ์ ทางความคิด มุ่งมั่นพัฒนาศักยภาพองค์กรเพื่อสุขภาพของคนไทยทั้งประเทศ </p>
       </div>
     </header>
 
@@ -48,42 +47,35 @@ session_start();
         Our <b>Dream Team</b></h2>
       <div class="s-12 m-6 l-2 margin-bottom">
         <img src="img/team-01.jpg" />
-        <h4 class="background-primary padding text-strong">Frank Star</h4>
-        <p class="margin-bottom-10 text-primary text-uppercase">Boss</p>
+        <h4 class="background-primary padding text-strong">ภรัณ เทียนสันต์</h4>
       </div>
       <div class="s-12 m-6 l-2 margin-bottom">
         <img src="img/team-02.jpg" />
-        <h4 class="background-primary padding text-strong">Jane Naismith</h4>
-        <p class="margin-bottom-10 text-primary text-uppercase">Graphic Designer</p>
+        <h4 class="background-primary padding text-strong">ณิชชารีย์ เทียนสันต์</h4>
       </div>
       <div class="s-12 m-6 l-2 margin-bottom">
         <img src="img/team-03.jpg" />
-        <h4 class="background-primary padding text-strong">Mark Stoner</h4>
-        <p class="margin-bottom-10 text-primary text-uppercase">Web Designer</p>
+        <h4 class="background-primary padding text-strong">อังคณา สมานพันธ์</h4>
       </div>
       <div class="s-12 m-6 l-2 margin-bottom">
         <img src="img/team-04.jpg" />
-        <h4 class="background-primary padding text-strong">Steve Carpenter</h4>
-        <p class="margin-bottom-10 text-primary text-uppercase">Web Developer</p>
+        <h4 class="background-primary padding text-strong">ปฏิพล ประวันเตา</h4>
       </div>
       <div class="s-12 m-6 l-2 margin-bottom">
         <img src="img/team-05.jpg" />
-        <h4 class="background-primary padding text-strong">Steff Kingston</h4>
-        <p class="margin-bottom-10 text-primary text-uppercase">Account Manager</p>
+        <h4 class="background-primary padding text-strong">สุรเดช คุรุภัณฑ์</h4>
       </div>
-      <div class="s-12 m-6 l-2 margin-bottom">
+      <!-- <div class="s-12 m-6 l-2 margin-bottom">
         <img src="img/team-06.jpg" />
         <h4 class="background-primary padding text-strong">John Sandman</h4>
         <p class="margin-bottom-10 text-primary text-uppercase">Account Manager</p>
-      </div>
+      </div> -->
     </section>
     <header class="grid">
       <div class="s-12 padding-2x">
-        <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-20">Our Services
+        <h1 class="text-strong text-white text-center center text-size-40 text-uppercase margin-bottom-20">Our Services
         </h1>
-        <p class="text-size-20 text-white text-center center text-uppercase">Con nonummy sem integer interdum volutpat
-          dis eget eligendi aliquip dolorum magnam. Iriure duis autem vel<br> eum dolor in hendrerit in vulputate velit
-          esse molestie consequat.</p>
+        <p class="text-size-20 text-white text-center center text-uppercase">- ปรึกษาปัญหาสุขภาพฟรี🔥<br><br> - วัดค่ามวลร่างกายฟรี🔥<br><br> - แนะนำโปรแกรมคอร์สลดน้ำหนักและควบคุมน้ำหนัก<br><br> - บริการติดตามผลถึงที่</p>
       </div>
     </header>
   </main>
