@@ -70,12 +70,12 @@ session_start();
 
     <section class="grid margin">
       <div class="s-12 m-6 l-6 margin-bottom">
-        <form action="#" method="post">
+        <form action="contact2.php" method="post">
           <label for="name">Name :</label>
           <input type="text" id="name" name="name" required>
 
-          <label for="email">Phone :</label>
-          <input type="email" id="email" name="email" required>
+          <label for="phone">Phone :</label>
+          <input type="text" id="phone" name="phone" required>
 
           <label for="message">Message :</label>
           <textarea id="message" name="message" rows="4" required></textarea>
