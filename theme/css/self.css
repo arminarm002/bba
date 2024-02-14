@@ -241,3 +241,6 @@ button {
   flex: 0 0 auto;
   width: 100%
 }
+.bsky{
+  color: #002633 !important;
+}
