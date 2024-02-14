@@ -29,17 +29,22 @@ session_start();
       display: flex;
       flex-direction: column;
     }
+
     label {
       margin-bottom: 8px;
-      color: #555;
+      color: #ade5f9;
     }
+
     input,
     textarea {
       padding: 10px;
       margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      background-color: #ade5f9;
+      color: #002633;
     }
+
     button {
       padding: 10px;
       background-color: #4caf50;
@@ -48,6 +53,7 @@ session_start();
       border-radius: 4px;
       cursor: pointer;
     }
+
     button:hover {
       background-color: #45a049;
     }
@@ -80,7 +86,7 @@ session_start();
           <label for="message">Message :</label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
-          <button type="submit">Submit</button>
+          <button type="submit" name="sendmail">Submit</button>
         </form>
       </div>
       <div class="s-12 m-6 l-6 margin-bottom"></div>

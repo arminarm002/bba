@@ -1,5 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/spc2024/connectdb.php');
+include('auth/connectdb.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -8,10 +8,10 @@ use PHPMailer\PHPMailer\Exception;
 require_once "PHPMailer/PHPMailer.php";
 require_once "PHPMailer/SMTP.php";
 require_once "PHPMailer/Exception.php";
-if (isset($_POST['forgot'])) {
-    $inputemail = $_POST['user_forget'];
-    $numrand = (mt_rand());
-    $password = password_hash($numrand, PASSWORD_DEFAULT);
+if (isset($_POST['sendmail'])) {
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
 
     $mail = new PHPMailer(true);
 
@@ -21,39 +21,36 @@ if (isset($_POST['forgot'])) {
         $mail->isSMTP();                                  //Send using SMTP
         $mail->Host = 'smtp.gmail.com';                   //Set the SMTP server to send through
         $mail->SMTPAuth = true;                           //Enable SMTP authentication
-        $mail->Username = 'suradech.ku@kmitl.ac.th';      //SMTP username
-        $mail->Password = 'phee mkwb szvm meco';          //SMTP password
+        $mail->Username = 'alarm.1993@gmail.com';         //SMTP username
+        $mail->Password = 'lego iiqz cpzp fjdm';          //SMTP password
         $mail->SMTPSecure = "SSL";                        //Enable implicit TLS encryption
         $mail->Port = 587;                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('suradech.ku@kmitl.ac.th', 'Admin SPC2024');
-        $mail->addAddress($inputemail, 'User');     //Add a recipient
-        $mail->addReplyTo('noryply@kmitl.ac.th', 'Information');
+        $mail->setFrom('alarm.1993@gmail.com', 'BBA-Body');
+        $mail->addAddress('alarm.1993@gmail.com', 'User');     //Add a recipient
+        $mail->addReplyTo('noryply@gmail.ac.th', 'Information');
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'SPC2024 : New Password';
-        $mail->Body = 'New Password for Login SPC2024 Website : ' . $numrand;
+        $mail->Subject = 'BBA New Member';
+        $mail->Body = $message;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-        $sql = $conn->query("UPDATE tb_user SET password='$password' WHERE email='" . $inputemail . "' ");
-        if ($sql) {
-            $mail->send();
+
+        if ($mail->send()) {
             echo '<script language="javascript">';
-            echo 'alert("Message has been sent")';
+            echo 'alert("ข้อความถูกส่งไปแล้ว")';
             echo '</script>';
-            header("refresh: 1; url=login.php");
+            header("refresh: 1; url=contact.php");
         } else {
             echo '<script language="javascript">';
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            echo "ไม่สามารถส่งข้อความได้ เกิดเหตุผิดพลาดบางประการ";
             echo '</script>';
-            header("refresh: 1; url=forgetpassword.php");
+            header("refresh: 1; url=contact.php");
         }
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
-
-// exit(json_encode(array("status" => $status, "response" => $response)));
 ?>
