@@ -89,11 +89,12 @@ session_start();
           <button type="submit" name="sendmail">Submit</button>
         </form>
       </div>
-      <div class="s-12 m-6 l-6 margin-bottom" style="padding: 35px; background-color: #ade5f9;">
-      <h2 class="bsky"><box-icon name='envelope'></box-icon> Email : alarm.1993@gmail.com</h2>
-      <h2 class="bsky"><box-icon name='phone-call'></box-icon> Phone : 098-8280992</h2>
-      <h2 class="bsky"><box-icon type='solid' name='message-rounded-dots'></box-icon> Line : armsu002</h2>
-
+      <div class="s-12 m-6 l-6 margin-bottom" style="padding: 35px; background-color: #ade5f9;border-radius: 5px;">
+        <h2 class="bsky"><box-icon name='envelope'></box-icon> <b>Email : alarm.1993@gmail.com</b></h2>
+        <h2 class="bsky"><box-icon name='phone-call'></box-icon> Phone : 098-8280992</h2>
+        <h2 class="bsky"><box-icon type='solid' name='message-rounded-dots'></box-icon> Line : armsu002</h2>
+        <!-- <img src="img/01.png"> -->
+        <img src="img/02.png">
       </div>
     </section>
 
