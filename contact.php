@@ -5,7 +5,7 @@ session_start();
 <html lang="en-US">
 
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name='keywords' content='ลดน้ำหนัก, อาหารเสริม, สุขภาพ, ดูแลตัวเอง'>
   <meta name='description' content='เว็บไซต์ให้คำปรึกษาผู้ที่ต้องการลดน้ำหนักหรือดูแลตัวเอง'>
   <meta name='copyright' content='BBA Team'>
@@ -24,30 +24,72 @@ session_start();
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 8px;
+      color: #555;
+    }
+    input,
+    textarea {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 
 <body class="size-1520 primary-color-red background-dark font-noto">
-   <?php
-   include('components/navbar.php');
-   ?>
-   <!-- MAIN -->
-   <main role="main" style="margin: 0px 25px;">
-      <!-- TOP SECTION -->
-      <header class="grid">
+  <?php
+  include('components/navbar.php');
+  ?>
+  <!-- MAIN -->
+  <main role="main" style="margin: 0px 25px;">
+    <!-- TOP SECTION -->
+    <header class="grid">
       <div class="s-12 padding-2x">
-        <h1 class="text-strong text-white text-center center text-size-40 text-uppercase margin-bottom-20">Contact Us</h1>
+        <h1 class="text-strong text-white text-center center text-size-40 text-uppercase margin-bottom-20">Contact Us
+        </h1>
       </div>
     </header>
 
-      <section class="grid margin">
-         <img class="s-12 m-6 l-6 margin-bottom" src="img/portfolio/thumb-01.jpg" alt="" />
-         <img class="s-12 m-6 l-6 margin-bottom" src="img/portfolio/thumb-01.jpg" alt="" />
-      </section>
+    <section class="grid margin">
+      <div class="s-12 m-6 l-6 margin-bottom">
+        <form action="#" method="post">
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" required>
 
-   </main>
-   <?php
-   include('components/footer.html');
-   ?>
+          <label for="email">Phone :</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="s-12 m-6 l-6 margin-bottom"></div>
+    </section>
+
+  </main>
+  <?php
+  include('components/footer.html');
+  ?>
 </body>
 
 </html>

@@ -158,16 +158,16 @@ $pbmi = ($bmi * 100) / 50;
       <h1> ประมวลค่าร่างกาย (ล่าสุด) </h1>
 
       <!-- น้ำหนัก -->
-      <p class="p" style="margin-bottom: 0px;">
+      <p class="p" style="margin-bottom: 0px;color:#fff">
         น้ำหนัก <b><u>
             <?php echo $weight; ?>
           </u></b> กิโลกรัม </p>
-      <div class="row" style="margin-bottom:0px;">
-        <div class="w-col-2">30</div>
-        <div class="w-col-2">60</div>
-        <div class="w-col-2">90</div>
-        <div class="w-col-2">120</div>
-        <div class="w-col-2">150</div>
+      <div class="row" style="margin-bottom:0px; color:#fff">
+        <div class="w-col-2" style="color:#fff;">30</div>
+        <div class="w-col-2" style="color:#fff;">60</div>
+        <div class="w-col-2" style="color:#fff;">90</div>
+        <div class="w-col-2" style="color:#fff;">120</div>
+        <div class="w-col-2" style="color:#fff;">150</div>
       </div>
 
       <div class="progress">
@@ -327,7 +327,7 @@ $pbmi = ($bmi * 100) / 50;
       <br>
 
       <!-- คำนวณไขมันในช่องท้อง -->
-      <p class="p">
+      <p class="p" style="color:#fff;">
         <?php echo "ไขมันในช่องท้อง = <b>" . $vfat . "</b> : อยู่ในเกณฑ์ ";
         ?><b><u>
             <?php
@@ -346,23 +346,20 @@ $pbmi = ($bmi * 100) / 50;
       </p>
       <div class="row">
         <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">&lt;2 สมบูรณ์</div>
+        <div class="vfat-col-3 ratate" style="color:#fff;">&lt;2 สมบูรณ์</div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">&lt;5 ปกติ</div>
-        <div class="vfat-col-3"></div>
-        <div class="vfat-col-3"></div>
-        <div class="vfat-col-3"></div>
-        <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">&lt;10 เล็กน้อย</div>
+        <div class="vfat-col-3 ratate" style="color:#fff;">&lt;5 ปกติ</div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">&lt;15 อันตราย</div>
+        <div class="vfat-col-3 ratate" style="color:#fff;">&lt;10 เล็กน้อย</div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
+        <div class="vfat-col-3"></div>
+        <div class="vfat-col-3 ratate" style="color:#fff;">&lt;15 อันตราย</div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
@@ -373,7 +370,10 @@ $pbmi = ($bmi * 100) / 50;
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
         <div class="vfat-col-3"></div>
-        <div class="vfat-col-3 ratate">&lt;30 อันตรายมาก</div>
+        <div class="vfat-col-3"></div>
+        <div class="vfat-col-3"></div>
+        <div class="vfat-col-3"></div>
+        <div class="vfat-col-3 ratate" style="color:#fff;">&lt;30 อันตรายมาก</div>
       </div>
       <div class="progress">
         <div class="progress-bar vfat">
@@ -533,17 +533,17 @@ $pbmi = ($bmi * 100) / 50;
       <br>
 
       <!-- อายุเซลล์ร่างกาย -->
-      <p class="p" style="margin-bottom: 0px;">
+      <p class="p" style="margin-bottom: 0px; color:#fff;">
         <?php echo "อายุเซลล์ร่างกาย = "; ?><b><u>
             <?php echo $bodyage; ?>
           </u></b>
         <?php echo " ปี" ?>
       </p>
-      <div class="row" style="margin-bottom: 0px;">
-        <div class="col-3">20 ปี</div>
-        <div class="col-3">40 ปี</div>
-        <div class="col-3">60 ปี</div>
-        <div class="col-3">80 ปี</div>
+      <div class="row" style="margin-bottom: 0px; color:#fff">
+        <div class="col-3" style="color:#fff;">20 ปี</div>
+        <div class="col-3" style="color:#fff;">40 ปี</div>
+        <div class="col-3" style="color:#fff;">60 ปี</div>
+        <div class="col-3" style="color:#fff;">80 ปี</div>
       </div>
       <div class="progress">
         <div class="progress-bar bodyage">
@@ -630,7 +630,7 @@ $pbmi = ($bmi * 100) / 50;
       </div>
 
       <!-- คำนวณค่า BMI -->
-      <p class="p">
+      <p class="p" style="color:#fff;">
         <?php echo "BMI = <b><u>" . $bmi . "</u></b> : อยู่ในเกณฑ์ ";
         ?><b><u>
             <?php
@@ -665,24 +665,19 @@ $pbmi = ($bmi * 100) / 50;
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">&lt;18.5 ผอม</div>
+        <div class="fat-col-2 ratate" style="color:#fff;">&lt;18.5 ผอม</div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">&lt;22.9 ปกติ</div>
+        <div class="fat-col-2 ratate" style="color:#fff;">&lt;22.9 ปกติ</div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">&lt;24.9 ท้วม</div>
-        <div class="fat-col-2"></div>
-        <div class="fat-col-2"></div>
-        <div class="fat-col-2"></div>
-        <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">&lt;30 อ้วน </div>
+        <div class="fat-col-2 ratate" style="color:#fff;">&lt;24.9 ท้วม</div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2"></div>
+        <div class="fat-col-2 ratate" style="color:#fff;">&lt;30 อ้วน </div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
@@ -696,7 +691,12 @@ $pbmi = ($bmi * 100) / 50;
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
         <div class="fat-col-2"></div>
-        <div class="fat-col-2 ratate">&lt;50 อันตราย</div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2"></div>
+        <div class="fat-col-2 ratate" style="color:#fff;">&lt;50 อันตราย</div>
       </div>
       <div class="progress">
         <div class="progress-bar bmi">
