@@ -50,7 +50,7 @@ session_start();
             <img src=img/product/01.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -65,7 +65,7 @@ session_start();
               ส่วนประกอบอื่นๆแตกต่างกันขึ้นอยู่กับแต่ละรสชาติ มีทั้งหมด 4 รสชาติ ได้แก่ รสจืด เบอร์รี่ ชาเขียว ช็อกโกแลต
             </p>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -80,7 +80,7 @@ session_start();
             <img src=img/product/10.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -94,7 +94,7 @@ session_start();
               &nbsp;ผลิตภัณฑ์เสริมอาหารที่มีส่วนประกอบสําคัญอย่างกรดอะมิโนจำเป็น (EAA) รสชาติอร่อย ทานง่าย สะดวก
               ช่วยเสริมสร้างกล้ามเนื้อหลังออกกำลังกาย</p>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -109,7 +109,7 @@ session_start();
             <img src=img/product/08.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -124,7 +124,7 @@ session_start();
               นิวทริไลท์ เลซิติน อี มีรสหวาน และแต่งกลิ่นด้วยน้ำผึ้ง คาร็อบและเมเปิ้ล วอลนัท
               เลซิตินเป็นไขมันชนิดฟอสโฟไลปิด ซึ่งมีฟอสฟาติดิลโคลีนเป็นส่วนประกอบหลัก</p>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -139,7 +139,7 @@ session_start();
             <img src=img/product/06.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -152,7 +152,7 @@ session_start();
             <p class="text-size-20 text-white" style="text-align:justify;">&nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp;ผลิตภัณฑ์เสริมอาหาร มีส่วนผสมของสารสกัดจากชาเขียว ปราศจากคาเฟอีน และสารสกัดจากสาหร่ายสีน้ำตาล</p>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -166,7 +166,7 @@ session_start();
             <img src=img/product/05.png class="border border-warning border-2 img-fluid" style="margin:auto;">
             <br>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <div class="row" style="margin:auto;">
@@ -182,7 +182,7 @@ session_start();
               ช่วยป้องกันไม่ให้อินซูลินในเลือดเพิ่มขึ้นอย่างรวดเร็ว ช่วยควบคุมอาการอยากอาหารได้ดีขึ้น
               มีสารช่วยต่อต้านอนุมูลอิสระ</p>
           </div>
-          <hr>
+          <hr style="width:100%">
         </div>
 
         <br>
