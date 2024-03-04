@@ -33,8 +33,8 @@ if (isset($_POST['sendmail'])) {
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'BBA New Member';
-        $mail->Body = $message;
+        $mail->Subject = 'BBA New Member : '.$name;
+        $mail->Body = 'ชื่อ : '.$name.'<br> เบอร์โทร : '.$phone.'<br>'.$message;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 
