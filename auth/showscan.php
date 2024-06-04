@@ -209,16 +209,17 @@ if (isset($_SESSION['level'])) {
         <h1> ประมวลค่าร่างกาย (ล่าสุด) </h1>
 
         <!-- น้ำหนัก -->
+        <div class="scan">
         <p class="p" style="margin-bottom: 0px; color:#fff;">
           น้ำหนัก <b><u>
               <?php echo $weight; ?>
             </u></b> กิโลกรัม <br>
         <div class="row" style="margin-bottom:0px;">
-          <div class="w-col-2" style="color:#fff;">30</div>
-          <div class="w-col-2" style="color:#fff;">60</div>
-          <div class="w-col-2" style="color:#fff;">90</div>
-          <div class="w-col-2" style="color:#fff;">120</div>
-          <div class="w-col-2" style="color:#fff;">150</div>
+          <div class="w-col-2" style="color:#000000;">30</div>
+          <div class="w-col-2" style="color:#000000;">60</div>
+          <div class="w-col-2" style="color:#000000;">90</div>
+          <div class="w-col-2" style="color:#000000;">120</div>
+          <div class="w-col-2" style="color:#000000;">150</div>
         </div>
         </p>
         <div class="progress">
@@ -230,10 +231,12 @@ if (isset($_SESSION['level'])) {
             </span>
           </div>
         </div>
+        </div>
         <br>
 
         <!-- คำนวณไขมันในร่างกาย -->
-        <p class="p">
+        <div class="scan">
+        <p class="p" style="color:#000000;">
           <?php echo "% ไขมันในร่างกาย = <b>" . $fat . "</b> : อยู่ในเกณฑ์ ";
           ?><b><u>
               <?php
@@ -261,7 +264,7 @@ if (isset($_SESSION['level'])) {
             </u></b>
         </p>
         <?php if ($_SESSION['gender'] == "male") { ?>
-          <div class="row">
+          <div class="row" style="color:#000000;">
             <div class="fat-col-2"></div>
             <div class="fat-col-2"></div>
             <div class="fat-col-2"></div>
@@ -314,7 +317,7 @@ if (isset($_SESSION['level'])) {
           </div>
         <?php } else if ($_SESSION['gender'] == "female") {
           ?>
-            <div class="row">
+            <div class="row" style="color:#000000;">
               <div class="fat-col-2"></div>
               <div class="fat-col-2"></div>
               <div class="fat-col-2"></div>
@@ -375,10 +378,12 @@ if (isset($_SESSION['level'])) {
             </span>
           </div>
         </div>
+        </div>
         <br>
 
         <!-- คำนวณไขมันในช่องท้อง -->
-        <p class="p" style="color:#fff;">
+        <div class="scan">
+        <p class="p" style="color:#000000;">
           <?php echo "ไขมันในช่องท้อง = <b>" . $vfat . "</b> : อยู่ในเกณฑ์ ";
           ?><b><u>
               <?php
@@ -395,24 +400,22 @@ if (isset($_SESSION['level'])) {
               } ?>
             </u></b>
         </p>
-        <div class="row">
+        <div class="row" style="color:#000000;">
           <div class="vfat-col-3"></div>
-          <div class="vfat-col-3 ratate" style="color:#fff;">&lt;2 สมบูรณ์</div>
-          <div class="vfat-col-3"></div>
-          <div class="vfat-col-3"></div>
-          <div class="vfat-col-3 ratate" style="color:#fff;">&lt;5 ปกติ</div>
+          <div class="vfat-col-3">&lt;2 สมบูรณ์</div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
-          <div class="vfat-col-3"></div>
-          <div class="vfat-col-3"></div>
-          <div class="vfat-col-3 ratate" style="color:#fff;">&lt;10 เล็กน้อย</div>
+          <div class="vfat-col-3">&lt;5 ปกติ</div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
-          <div class="vfat-col-3 ratate" style="color:#fff;">&lt;15 อันตราย</div>
+          <div class="vfat-col-3">&lt;10 เล็กน้อย</div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
+          <div class="vfat-col-3"></div>
+          <div class="vfat-col-3"></div>
+          <div class="vfat-col-3">&lt;15 อันตราย</div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
@@ -424,7 +427,9 @@ if (isset($_SESSION['level'])) {
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
           <div class="vfat-col-3"></div>
-          <div class="vfat-col-3 ratate" style="color:#fff;">&lt;30 อันตรายมาก</div>
+          <div class="vfat-col-3"></div>
+          <div class="vfat-col-3"></div>
+          <div class="vfat-col-3">&lt;30 อันตรายมาก</div>
         </div>
         <div class="progress">
           <div class="progress-bar vfat">
@@ -435,10 +440,12 @@ if (isset($_SESSION['level'])) {
             </span>
           </div>
         </div>
+            </div>
         <br>
 
         <!-- คำนวณกล้ามเนื้อ -->
-        <p class="p">
+        <div class="scan">
+        <p class="p" style="color:#000000;">
           <?php echo "% กล้ามเนื้อในร่างกาย = <b>" . $muscle . "</b> : อยู่ในเกณฑ์ ";
           ?><b><u>
               <?php
@@ -467,7 +474,7 @@ if (isset($_SESSION['level'])) {
             </u></b>
         </p>
         <?php if ($_SESSION['gender'] == "male") { ?>
-          <div class="row">
+          <div class="row" style="color:#000000;">
             <div class="fat-col-2"></div>
             <div class="fat-col-2"></div>
             <div class="fat-col-2"></div>
@@ -520,7 +527,7 @@ if (isset($_SESSION['level'])) {
           </div>
         <?php } else if ($_SESSION['gender'] == "female") {
           ?>
-            <div class="row">
+            <div class="row" style="color:#000000;">
               <div class="fat-col-2"></div>
               <div class="fat-col-2"></div>
               <div class="fat-col-2"></div>
@@ -581,20 +588,22 @@ if (isset($_SESSION['level'])) {
             </span>
           </div>
         </div>
+        </div>
         <br>
 
         <!-- อายุเซลล์ร่างกาย -->
-        <p class="p" style="margin-bottom: 0px; color:#fff;">
+        <div class="scan">
+        <p class="p" style="margin-bottom: 0px; color:#000000;">
           <?php echo "อายุเซลล์ร่างกาย = "; ?><b><u>
               <?php echo $bodyage; ?>
             </u></b>
           <?php echo " ปี" ?>
         </p>
         <div class="row" style="margin-bottom: 0px;">
-          <div class="col-3" style="color:#fff;">20 ปี</div>
-          <div class="col-3" style="color:#fff;">40 ปี</div>
-          <div class="col-3" style="color:#fff;">60 ปี</div>
-          <div class="col-3" style="color:#fff;">80 ปี</div>
+          <div class="col-3" style="color:#000000;">20 ปี</div>
+          <div class="col-3" style="color:#000000;">40 ปี</div>
+          <div class="col-3" style="color:#000000;">60 ปี</div>
+          <div class="col-3" style="color:#000000;">80 ปี</div>
         </div>
         <div class="progress">
           <div class="progress-bar bodyage">
@@ -608,8 +617,8 @@ if (isset($_SESSION['level'])) {
         <br>
 
         <!-- อัตราการเผาผลาญ -->
-        <div>
-          <p class="p">
+        <div class="scan">
+          <p class="p" style="color:#000000;">
             <?php echo "อัตราการเผาผลาญ = "; ?><u>
               <b>
                 <?php echo $metabolism; ?>
@@ -617,7 +626,7 @@ if (isset($_SESSION['level'])) {
             </u>
             <?php echo " kcal" ?>
           </p>
-          <div class="row">
+          <div class="row" style="color:#000000;">
             <div class="fat-col-2"></div>
             <div class="fat-col-2"></div>
             <div class="fat-col-2"></div>
@@ -681,7 +690,7 @@ if (isset($_SESSION['level'])) {
         </div>
 
         <!-- คำนวณค่า BMI -->
-        <p class="p" style="color:#fff;">
+        <p class="p" style="color:#000000;">
           <?php echo "BMI = <b><u>" . $bmi . "</u></b> : อยู่ในเกณฑ์ ";
           ?><b><u>
               <?php
@@ -716,24 +725,19 @@ if (isset($_SESSION['level'])) {
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
-          <div class="fat-col-2 ratate" style="color:#fff;">&lt;18.5 ผอม</div>
+          <div class="fat-col-2">&lt;18.5 ผอม</div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
-          <div class="fat-col-2 ratate" style="color:#fff;">&lt;22.9 ปกติ</div>
+          <div class="fat-col-2">&lt;22.9 ปกติ</div>
           <div class="fat-col-2"></div>
-          <div class="fat-col-2 ratate" style="color:#fff;">&lt;24.9 ท้วม</div>
-          <div class="fat-col-2"></div>
-          <div class="fat-col-2"></div>
-          <div class="fat-col-2"></div>
-          <div class="fat-col-2"></div>
-          <div class="fat-col-2 ratate" style="color:#fff;">&lt;30 อ้วน </div>
+          <div class="fat-col-2">&lt;24.9 ท้วม</div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
-          <div class="fat-col-2"></div>
+          <div class="fat-col-2">&lt;30 อ้วน </div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
@@ -747,7 +751,12 @@ if (isset($_SESSION['level'])) {
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
           <div class="fat-col-2"></div>
-          <div class="fat-col-2 ratate" style="color:#fff;">&lt;50 อันตราย</div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2"></div>
+          <div class="fat-col-2">&lt;50 อันตราย</div>
         </div>
         <div class="progress">
           <div class="progress-bar bmi">
