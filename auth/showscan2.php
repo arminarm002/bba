@@ -159,7 +159,7 @@ $pbmi = ($bmi * 100) / 50;
       <h1> ประมวลค่าร่างกาย (ล่าสุด) </h1>
 
       <!-- น้ำหนัก -->
-      <div class="scan">
+      <div class="scan"> 
         <p class="p" style="margin-bottom: 0px;color:#000000">
           น้ำหนัก <b><u>
               <?php echo $weight; ?>
