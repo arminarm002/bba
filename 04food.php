@@ -187,58 +187,62 @@ session_start();
 
         <br>
         <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-10">
-          โปรโมชั่น ประจำเดือน กุมภาพันธ์</h1>
+          โปรโมชั่น ประจำเดือน สิงหาคม</h1>
         <div class="row">
           <div class="col-4">
-            <a href="img/product/pro01.jpg" target="_blank">
-              <img src="img/product/pro01.jpg" class="d-block w-100"
-                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            <a href="img/product/pro04.jpg" target="_blank">
+              <img src="img/product/pro04.jpg" class="promotion d-block w-100">
             </a>
           </div>
           <div class="col-4">
             <a href="img/product/pro02.jpg" target="_blank">
-              <img src="img/product/pro02.jpg" class="d-block w-100"
-                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img src="img/product/pro02.jpg" class="promotion d-block w-100">
             </a>
           </div>
           <div class="col-4">
             <a href="img/product/pro03.jpg" target="_blank">
-              <img src="img/product/pro03.jpg" class="d-block w-100"
-                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img src="img/product/pro03.jpg" class="promotion d-block w-100">
             </a>
           </div>
         </div><br>
         <div class="row">
           <div class="col-4">
-            <a href="img/product/pro04.jpg" target="_blank">
-              <img src="img/product/pro04.jpg" class="d-block w-100"
-                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            <a href="img/product/pro01.jpg" target="_blank">
+              <img src="img/product/pro01.jpg" class="promotion d-block w-100">
             </a>
           </div>
           <div class="col-4">
             <a href="img/product/pro05.jpg" target="_blank">
-              <img src="img/product/pro05.jpg" class="d-block w-100"
-                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <img src="img/product/pro05.jpg" class="promotion d-block w-100">
             </a>
           </div>
           <div class="col-4">
-            <a href="img/product/pro06.jpg" target="_blank">
-              <img src="img/product/pro06.jpg" class="d-block w-100"
-                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            <a href="img/product/pro10.jpg" target="_blank">
+              <img src="img/product/pro10.jpg" class="promotion d-block w-100">
             </a>
           </div>
         </div><br>
         <div class="row">
           <div class="col-6">
-            <a href="img/product/pro07.jpg" target="_blank">
-              <img src="img/product/pro07.jpg" class="d-block w-100"
-                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            <a href="img/product/pro06.jpg" target="_blank">
+              <img src="img/product/pro06.jpg" class="promotion d-block w-100">
             </a>
           </div>
           <div class="col-6">
-            <a href="img/product/pro00.jpg" target="_blank">
-              <img src="img/product/pro00.jpg" class="d-block w-100"
-                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+            <a href="img/product/pro07.jpg" target="_blank">
+              <img src="img/product/pro07.jpg" class="promotion d-block w-100">
+            </a>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-6">
+            <a href="img/product/pro08.jpg" target="_blank">
+              <img src="img/product/pro08.jpg" class="promotion d-block w-100">
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="img/product/pro09.jpg" target="_blank">
+              <img src="img/product/pro09.jpg" class="promotion d-block w-100">
             </a>
           </div>
         </div>
