@@ -187,7 +187,7 @@ session_start();
 
         <br>
         <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-10">
-          โปรโมชั่น ประจำเดือน สิงหาคม</h1>
+          โปรโมชั่น ประจำเดือน กันยายน</h1>
         <div class="row">
           <div class="col-4">
             <a href="img/product/pro04.jpg" target="_blank">
